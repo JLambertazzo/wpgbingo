@@ -39,3 +39,7 @@
 .hide {
     visibility: hidden;
 }
+
+.inactive-card {
+    background-color: darkslategray;
+}
