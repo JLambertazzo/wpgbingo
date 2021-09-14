@@ -1,0 +1,41 @@
+.bingo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bingo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bingo-row>* {
+    width: 100px;
+    text-align: center;
+}
+
+.bingo-row>.card {
+    width: auto;
+    height: fit-content;
+}
+
+.lightbox-shade {
+    background-color: rgba(0,0,0,0.6);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+}
+
+.lightbox-img {
+    z-index: 15;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.hide {
+    visibility: hidden;
+}
