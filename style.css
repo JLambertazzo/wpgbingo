@@ -1,6 +1,12 @@
 .bingo-container {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
 }
 
 .bingo-row {
@@ -10,13 +16,20 @@
 }
 
 .bingo-row>* {
-    width: 100px;
+    width: 150px;
     text-align: center;
 }
 
 .bingo-row>.card {
-    width: auto;
+    width: 160px;
     height: fit-content;
+    display: grid;
+    place-items: center;
+    height: 170px;
+}
+
+.bingo-row>.card>img {
+    width: 100px;
 }
 
 .lightbox-shade {
@@ -24,16 +37,18 @@
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    position: absolute;
+    position: fixed;
 }
 
 .lightbox-img {
     z-index: 15;
     transform: translate(-50%,-50%);
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     opacity: 1;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 .hide {
@@ -41,5 +56,38 @@
 }
 
 .inactive-card {
-    background-color: darkslategray;
+    background-color: gray;
+    filter: blur(1px);
+}
+
+.inactive-card>img {
+    filter: blur(1px);
+}
+
+/* tablet or smaller */
+@media only screen and (max-width: 1024px) {
+    .bingo-row>.card {
+        width: 110px;
+        height: fit-content;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+    }
+}
+
+/* phone or smaller */
+@media only screen and (max-width: 768px) {
+    .bingo-row>.card {
+        width: 60px;
+        height: fit-content;
+    }
+
+    .bingo-row>.card>img {
+        width: 50px;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+    }
 }

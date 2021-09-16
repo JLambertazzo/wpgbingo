@@ -31,7 +31,7 @@ function imageClickHandler(img) {
 }
 
 function lightboxBlurHandler(target) {
-    if ([...target.classList].includes('lightbox-img')) {
+    if (target && [...target.classList].includes('lightbox-img')) {
         return false
     }
     lightboxContainer.classList.add('hide')
@@ -57,3 +57,9 @@ images.forEach(img => {
 });
 
 lightboxContainer.addEventListener('click', (e) => lightboxBlurHandler(e.target))
+
+document.addEventListener('keydown', (ev) => {
+    if (ev.key === 'Escape') {
+        lightboxBlurHandler(document.querySelector('.lightbox-img'))
+    }
+})
