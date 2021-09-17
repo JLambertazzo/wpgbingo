@@ -51,6 +51,32 @@
     max-height: 80vh;
 }
 
+.lightbox-img:hover {
+    filter: brightness(50%);
+    transition: all 1000ms;
+}
+
+.lightbox-txt {
+    z-index: 16;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    max-width: 80vw;
+    max-height: 80vh;
+    /* visibility: shidden; */
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    opacity: 1;
+    padding: 2px;
+    transition: all 1000ms;
+}
+
+.hide-txt {
+    opacity: 0;
+}
+
 .hide {
     visibility: hidden;
 }

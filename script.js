@@ -25,9 +25,17 @@ function imageClickHandler(img) {
     const newimg = document.createElement('img')
     newimg.src = img.src
     newimg.className = 'lightbox-img'
+    // set proper text for hover event
+    const text = document.createElement('h4')
+    text.innerText = desc[img.parentElement.getAttribute('key')]
+    text.classList.add('lightbox-txt', 'hide-txt')
+    newimg.addEventListener('mouseenter', () => text.classList.remove('hide-txt'))
+    newimg.addEventListener('mouseleave', () => text.classList.add('hide-txt'))
     lightboxContainer.innerHTML = ''
     lightboxContainer.appendChild(newimg)
-    lightboxContainer.classList.remove('hide')    
+    lightboxContainer.appendChild(text)
+    newimg.classList.add('shaded')
+    lightboxContainer.classList.remove('hide')
 }
 
 function lightboxBlurHandler(target) {
