@@ -5,7 +5,7 @@ const desc = {
     4: "The teepee is on the main walking/cycling path through Fort Whyte Alive.",
     5: "The Leaf is the newest attraction at Assiniboine Park. ",
     6: "This carving, just south of John Bruce Rd, is one of more than 20 that can be found along the trails in Bois Des Esprits.",
-    7: "The Elm Park Bridge connects Kingston Creacent and Jubilee, next to a well-known ice cream venue.",
+    7: "The Elm Park Bridge connects Kingston Crescent and Jubilee, next to a well-known ice cream venue.",
     8: "The kettle, at Beaumont station, is one of several pieces of public art along the Southwest transitway path.",
     9: "The Lyric Theatre is a popular venue in Assiniboine Park. ",
     10: "The deer lie at the corner of the William Clement Parkway and Grant Ave.",

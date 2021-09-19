@@ -13,9 +13,17 @@
 <body>
     <div class="lightbox-shade hide">
     </div>
+    <div class="top-blue"></div>
+    <div class="left-blue"></div>
     <div class="bingo-container">
+        <h1>Winnipeg Cycling Bingo</h1>
+        <h2 class="subheader">Want a cycling challenge? Choose a line of five squares horizontally, vertically or diagonally<br>or</h2>
         <div class="controls">
-            <button class="btn btn-dark" onclick="handleRandom()">Random Bingo</button>
+            <div class="controls-container">
+                <button class="btn btn-cornflowerblue" onclick="handleRandom()">Assign me a Random Bingo</button>
+                <h6>or</h6>
+                <button class="btn btn-danger" onclick="handleRandomSeven()">Assign me a 7-SQUARE Bingo</button>
+            </div>
         </div>
         <div class="bingo-row">
             <div class="ms-2"><h1>B</h1></div>

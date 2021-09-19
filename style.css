@@ -1,12 +1,60 @@
+body {
+    overflow-x: hidden;
+}
+
 .bingo-container {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.top-blue {
+    width: 100vw;
+    height: 5vh;
+    background-color: cornflowerblue;
+    z-index: 2;
+}
+
+.left-blue {
+    width: 5vh;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: cornflowerblue;
+}
+
+.subheader {
+    font-size: 1.5rem;
+    margin-left: 5vh;
 }
 
 .controls {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controls-container {
+    width: fit-content;
+}
+
+.controls>button {
+    display: block;
+    width: auto;
+}
+
+.btn-cornflowerblue {
+    background: cornflowerblue;
+    color: white;
+}
+
+.btn-cornflowerblue:hover {
+    color: white;
+    background: #4d85ea;
 }
 
 .bingo-row {
@@ -49,10 +97,10 @@
     opacity: 1;
     max-width: 80vw;
     max-height: 80vh;
+    filter: brightness(50%);
 }
 
 .lightbox-img:hover {
-    filter: brightness(50%);
     transition: all 1000ms;
 }
 
@@ -115,5 +163,18 @@
 
     .card-title {
         font-size: 0.6rem;
+    }
+
+    .top-blue {
+        height: 2vh;
+    }
+
+    .left-blue {
+        width: 2vh;
+    }
+
+    .subheader {
+        font-size: 1rem;
+        margin: 0;
     }
 }
