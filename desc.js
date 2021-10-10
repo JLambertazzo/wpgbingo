@@ -23,5 +23,5 @@ const desc = {
     22: "The Bunn’s Creek trail runs from the Northeast Pioneers Greenway to the Red  river.",
     23: "The wolves lie along Chief Peguis Trail a little east of the Red river.",
     24: "Rainbow Stage theatre sits near the Red River in Kildonan Park, close to the North Winnipeg Parkway trail.",
-    25: "It’s not as grandiose as Stonehenge, but the concrete piles stacked together in circles here are a draw for the curious. The remnants of an old cement factory, this area is a few kilometres from any protected cycling infrastructure. Proceed with caution.",
+    25: "Winnipeg's answer to Stonehenge. Concrete piles stacked in circles - the remnants of an old cement factory. it's just outside city limits on Sturgeon Rd in the RM of Rosser. It's a few kilometres from any protected cycling infrastructure. Proceed with caution.",
 }
