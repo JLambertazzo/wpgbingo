@@ -133,8 +133,11 @@ body {
     padding: 5px;
 }
 
+.active-card {
+    background-color: #C8D7F9;
+}
+
 .inactive-card {
-    background-color: gray;
     filter: blur(1px);
 }
 

@@ -8,7 +8,7 @@ const desc = {
     7: "The Elm Park Bridge connects Kingston Crescent and Jubilee, next to a well-known ice cream venue.",
     8: "The kettle, at Beaumont station, is one of several pieces of public art along the Southwest transitway path.",
     9: "The Lyric Theatre is a popular venue in Assiniboine Park. ",
-    10: "The deer lie at the corner of the William Clement Parkway and Grant Ave.",
+    10: "A recreation of a grain mill that operated circa 1830. It lies along the Sturgeon Creek Greenway trail.",
     11: "The Saint Boniface Cathedral is across the Red River from The Forks.",
     12: "The Canadian Museum For Human Rights is the tallest building at The Forks.",
     13: "The Forks is a popular destination for summer patio fun and winter skating.",
