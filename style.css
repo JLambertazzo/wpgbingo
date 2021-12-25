@@ -258,3 +258,9 @@ body {
 .wof-link:hover {
     text-decoration: underline;
 }
+
+.wall-sub {
+    text-align: center;
+    color: gray;
+    font-size: x-large;
+}
