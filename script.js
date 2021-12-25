@@ -64,7 +64,7 @@ const randomMap = {
 const randomLoops = { 
     0: {
         cards: [1, 2, 3, 6, 8, 11, 12, 13],
-        link: 'https://t.ly/yXzW',
+        link: 'https://t.ly/sHLy',
     },
     1: {
         cards: [3, 4, 5, 8, 10, 13, 14, 15],
@@ -76,7 +76,7 @@ const randomLoops = {
     },
     3: {
         cards: [11, 12, 13, 16, 18, 21, 22, 23],
-        link: 'https://t.ly/kPfG'
+        link: 'https://t.ly/G4FH'
     }
 }
 let activeCards = null
@@ -119,6 +119,7 @@ function handleRandom() {
     })
     // show map it link
     document.querySelector('.accept').classList.remove('hide');
+    document.querySelector('.btn-hr').classList.remove('hide')
     const a = document.querySelector('#map-link')
     a.setAttribute('href', selected.link)
 }
@@ -138,8 +139,20 @@ function handleRandomLoop() {
     })
     // show map it link
     document.querySelector('.accept').classList.remove('hide');
+    document.querySelector('.btn-hr').classList.remove('hide')
     const a = document.querySelector('#map-link')
     a.setAttribute('href', selected.link)
+}
+
+function handleHardcore() {
+    cards.forEach(card => {
+        card.classList.remove('inactive-card')
+        card.classList.add('active-card')
+    })
+    document.querySelector('.accept').classList.remove('hide')
+    document.querySelector('.btn-hr').classList.remove('hide')
+    const a = document.querySelector('#map-link')
+    a.setAttribute('href', "https://t.ly/BUCq")
 }
 
 images.forEach(img => {

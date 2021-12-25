@@ -28,25 +28,33 @@
     </div>
     <div class="top-blue"></div>
     <div class="left-blue"></div>
+    <a href="/wall" aria-hidden="false" class="wof-link-cont">
+        <div class="wof-link">Check out our Wall of Fame →</div>
+    </a>
     <div class="bingo-container">
         <h1>Winnipeg Cycling Bingo</h1>
         <h2 class="subheader">Want a cycling challenge? Choose a line of five squares horizontally, vertically or diagonally<br>or</h2>
-        <div class="controls">
-            <div class="controls-container">
-                <button class="btn btn-cornflowerblue" onclick="handleRandom()">Assign me a Random Bingo</button>
-                <h6>or</h6>
-                <button class="btn btn-danger" onclick="handleRandomLoop()">How about a loop?</button>
+        <div class="all-btn">
+            <div class="controls">
+                <div class="controls-container">
+                    <button class="btn btn-cornflowerblue" onclick="handleRandom()">Assign me a Random Bingo</button>
+                    <h2>or</h2>
+                    <button class="btn btn-success" onclick="handleRandomLoop()">How about a loop?</button>
+                    <h2>or</h2>
+                    <button class="btn btn-warning" onclick="handleHardcore()">HARDCORE. All 25 squares</button>
+                </div>
+            </div>
+            <hr class="btn-hr hide">
+            <div class="accept hide">
+                <a id="map-link" class="btn btn-cornflowerblue" target="_blank">I accept. Map it!</a>
             </div>
         </div>
-        <div class="accept hide">
-            <a id="map-link" class="btn btn-cornflowerblue" target="_blank">I accept. Map it!</a>
-        </div>
         <div class="bingo-row">
-            <div class="ms-2"><h1>B</h1></div>
-            <div class="ms-2"><h1>I</h1></div>
-            <div class="ms-2"><h1>N</h1></div>
-            <div class="ms-2"><h1>G</h1></div>
-            <div class="ms-2"><h1>O</h1></div>
+            <div class="ms-2 m-ms-1"><h1>B</h1></div>
+            <div class="ms-2 m-ms-1"><h1>I</h1></div>
+            <div class="ms-2 m-ms-1"><h1>N</h1></div>
+            <div class="ms-2 m-ms-1"><h1>G</h1></div>
+            <div class="ms-2 m-ms-1"><h1>O</h1></div>
         </div>
         <div class="bingo-row">
             <div class="card col-2 m-md-1 p-1" key="1">
