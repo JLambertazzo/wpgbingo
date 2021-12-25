@@ -226,6 +226,12 @@ body {
         padding: 0.5rem !important;
         border-radius: 5px !important;
     }
+    .wall-title {
+        font-size: medium !important;
+    }
+    .wall-sub {
+        font-size: small !important;
+    }
 }
 
 .wall-title {
