@@ -2,7 +2,7 @@ const desc = {
     1: "An old prop from the Manitoba Museum, the hand is on private property across the Seine river from a public path, just inside the Perimeter highway.",
     2: "The antlers are right beside the greenway, a little west of Ste Anne’s Rd.",
     3: "The home of the Winnipeg Blue Bombers, on the University of Manitoba campus.",
-    4: "The teepee is on the main walking/cycling path through Fort Whyte Alive.",
+    4: "The tipi is on the main walking/cycling path through Fort Whyte Alive.",
     5: "The Leaf is the newest attraction at Assiniboine Park. ",
     6: "This carving, just south of John Bruce Rd, is one of more than 20 that can be found along the trails in Bois Des Esprits.",
     7: "The Elm Park Bridge connects Kingston Crescent and Jubilee, next to a well-known ice cream venue.",
