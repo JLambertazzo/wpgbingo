@@ -1,54 +1,80 @@
 /**
- * 1. Visit count related code
+ * 0. Run after password input
  */
-console.log("getting");
-// fetch("https://gen-pup.herokuapp.com/visits/wpgbingo")
-fetch("http://localhost:8080/visits/wpgbingo")
+const password = prompt("enter admin password");
+const authReq = new Request("http://localhost:8080/auth/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+  body: JSON.stringify({ auth: { slug: "wpgbingo", password } }),
+});
+fetch(authReq)
   .then(resJson)
-  .then(({ visits }) => {
-    const visitsToday = visits.filter((visit) => {
-      const d = new Date(visit.date);
-      const n = new Date();
-      return (
-        d.getDate() === n.getDate() &&
-        d.getMonth() === n.getMonth() &&
-        d.getFullYear() === n.getFullYear()
-      );
-    });
-    const totalText = el(
-      "p",
-      "",
-      {},
-      document.createTextNode(
-        `Since May 30th, 2022 we've received ${visits.length} visits`
-      )
-    );
-    const dailyText = el(
-      "p",
-      "",
-      {},
-      document.createTextNode(
-        `Today, we've received ${visitsToday.length} visits`
-      )
-    );
-    const visitsDiv = document.querySelector("#visits");
-    visitsDiv.appendChild(totalText);
-    visitsDiv.appendChild(dailyText);
+  .then(({ authenticated }) => {
+    if (authenticated) {
+      // reveal site
+      document.body.classList.remove("hide");
+      // fetch("https://gen-pup.herokuapp.com/visits/wpgbingo")
+      fetch("http://localhost:8080/visits/wpgbingo")
+        .then(resJson)
+        .then(loadVisits)
+        .catch(console.error);
+
+      // fetch("https://gen-pup.herokuapp.com/wpgbingo/hof")
+      fetch("http://localhost:8080/wpgbingo/hof")
+        .then(resJson)
+        .then(loadHofers)
+        .catch(console.error);
+    }
   })
   .catch(console.error);
 
 /**
+ * 1. Visit count related code
+ */
+
+function loadVisits({ visits }) {
+  const visitsToday = visits.filter((visit) => {
+    const d = new Date(visit.date);
+    const n = new Date();
+    return (
+      d.getDate() === n.getDate() &&
+      d.getMonth() === n.getMonth() &&
+      d.getFullYear() === n.getFullYear()
+    );
+  });
+  const totalText = el(
+    "p",
+    "",
+    {},
+    document.createTextNode(
+      `Since May 30th, 2022 we've received ${visits.length} visits`
+    )
+  );
+  const dailyText = el(
+    "p",
+    "",
+    {},
+    document.createTextNode(
+      `Today, we've received ${visitsToday.length} visits`
+    )
+  );
+  const visitsDiv = document.querySelector("#visits");
+  visitsDiv.appendChild(totalText);
+  visitsDiv.appendChild(dailyText);
+}
+
+/**
  * 2. HoF related code
  */
-fetch("http://localhost:8080/wpgbingo/hof")
-  .then(resJson)
-  .then(({ hofers }) => {
-    document
-      .querySelector("#wof-count")
-      .appendChild(document.createTextNode(`: ${hofers.length}`));
-    hofers.forEach(showHofer);
-  })
-  .catch(console.error);
+function loadHofers({ hofers }) {
+  document
+    .querySelector("#wof-count")
+    .appendChild(document.createTextNode(`: ${hofers.length}`));
+  hofers.forEach(showHofer);
+}
 
 function handleHofInput(event) {
   document.querySelector(".hof-input-fields").classList.remove("hide");
@@ -89,15 +115,18 @@ function showHofer(hofer) {
     "hofer-data",
     {},
     el("h3", "", { name: hofer.name }, t(hofer.name)),
-    el("h4", "", {}, t(hofer.date)),
-    el("img", "", { src: hofer.img }),
+    el("h4", "", {}, t(new Date(hofer.date).toUTCString())),
+    el("img", "", { src: hofer.img, width: "200px" }),
+    el("br", "", {}),
     el("a", "", { href: hofer.map }, t("Link to map")),
+    el("br", "", {}),
     el(
       "button",
       "",
       { onclick: `removeHofer("${hofer.name}")` },
       t("Remove from Wall")
-    )
+    ),
+    el("hr", "", {})
   );
   document.querySelector("#hof").appendChild(display);
 }
