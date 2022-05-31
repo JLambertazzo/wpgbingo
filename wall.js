@@ -2,6 +2,7 @@
 fetch("https://gen-pup.herokuapp.com/wpgbingo/hof")
   .then(resJson)
   .then(({ hofers }) => {
+    document.querySelector(".loading-text").classList.add("hide");
     hofers.forEach(showHofer);
     showHofer({
       name: "This could be you!",
