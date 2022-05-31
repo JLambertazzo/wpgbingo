@@ -3,7 +3,7 @@
  */
 const password = prompt("enter admin password");
 // const authReq = new Request("http://localhost:8080/auth/login", {
-const authReq = new Request("http://gen-pup.herokuapp.com/auth/login", {
+const authReq = new Request("https://gen-pup.herokuapp.com/auth/login", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -94,7 +94,7 @@ function saveHofer() {
     map: document.querySelector("#map-input").value,
   };
   // const req = new Request("http://localhost:8080/wpgbingo/hof", {
-  const req = new Request("http://gen-pup.herokuapp.com/wpgbingo/hof", {
+  const req = new Request("https://gen-pup.herokuapp.com/wpgbingo/hof", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -137,7 +137,7 @@ function removeHofer(name) {
   const del = confirm(`Do you really want to delete ${name}`);
   if (del) {
     // fetch(`http://localhost:8080/wpgbingo/hof/${name}`, { method: "DELETE" })
-    fetch(`http://gen-pup.herokuapp.com/wpgbingo/hof/${name}`, {
+    fetch(`https://gen-pup.herokuapp.com/wpgbingo/hof/${name}`, {
       method: "DELETE",
     })
       .then(resJson)
