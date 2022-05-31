@@ -2,7 +2,8 @@
  * 0. Run after password input
  */
 const password = prompt("enter admin password");
-const authReq = new Request("http://localhost:8080/auth/login", {
+// const authReq = new Request("http://localhost:8080/auth/login", {
+const authReq = new Request("http://gen-pup.herokuapp.com/auth/login", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -16,14 +17,14 @@ fetch(authReq)
     if (authenticated) {
       // reveal site
       document.body.classList.remove("hide");
-      // fetch("https://gen-pup.herokuapp.com/visits/wpgbingo")
-      fetch("http://localhost:8080/visits/wpgbingo")
+      // fetch("http://localhost:8080/visits/wpgbingo")
+      fetch("https://gen-pup.herokuapp.com/visits/wpgbingo")
         .then(resJson)
         .then(loadVisits)
         .catch(console.error);
 
-      // fetch("https://gen-pup.herokuapp.com/wpgbingo/hof")
-      fetch("http://localhost:8080/wpgbingo/hof")
+      // fetch("http://localhost:8080/wpgbingo/hof")
+      fetch("https://gen-pup.herokuapp.com/wpgbingo/hof")
         .then(resJson)
         .then(loadHofers)
         .catch(console.error);
@@ -92,7 +93,8 @@ function saveHofer() {
     img: document.querySelector("#img-input").value,
     map: document.querySelector("#map-input").value,
   };
-  const req = new Request("http://localhost:8080/wpgbingo/hof", {
+  // const req = new Request("http://localhost:8080/wpgbingo/hof", {
+  const req = new Request("http://gen-pup.herokuapp.com/wpgbingo/hof", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -134,7 +136,10 @@ function showHofer(hofer) {
 function removeHofer(name) {
   const del = confirm(`Do you really want to delete ${name}`);
   if (del) {
-    fetch(`http://localhost:8080/wpgbingo/hof/${name}`, { method: "DELETE" })
+    // fetch(`http://localhost:8080/wpgbingo/hof/${name}`, { method: "DELETE" })
+    fetch(`http://gen-pup.herokuapp.com/wpgbingo/hof/${name}`, {
+      method: "DELETE",
+    })
       .then(resJson)
       .then(console.log)
       .catch(console.error);
