@@ -42,43 +42,20 @@ fetch("http://localhost:8080/visits/wpgbingo")
  */
 fetch("http://localhost:8080/wpgbingo/hof")
   .then(resJson)
-  .then(console.log)
+  .then(({ hofers }) => {
+    document
+      .querySelector("#wof-count")
+      .appendChild(document.createTextNode(`: ${hofers.length}`));
+    hofers.forEach(showHofer);
+  })
   .catch(console.error);
 
-function handleHofInput() {
-  if (document.querySelector("#name-input")) return;
-  const input = el(
-    "div",
-    "hof-fields",
-    { id: "active-hof-fields" },
-    el("input", "", { placeholder: "Name", name: "name", id: "name-input" }),
-    el("input", "", { type: "date", name: "date", id: "date-input" }),
-    el("input", "", {
-      placeholder: "Image Link",
-      name: "img",
-      id: "img-input",
-    }),
-    el("input", "", { placeholder: "Map Link", name: "map", id: "map-input" }),
-    el(
-      "button",
-      "",
-      { onclick: "saveHofer()" },
-      document.createTextNode("Create")
-    ),
-    el(
-      "button",
-      "",
-      { onclick: "cancelHofer()" },
-      document.createTextNode("Cancel")
-    )
-  );
-  document.querySelector("#hof").appendChild(input);
+function handleHofInput(event) {
+  document.querySelector(".hof-input-fields").classList.remove("hide");
 }
 
 function cancelHofer() {
-  const fields = document.querySelector("#active-hof-fields");
-  if (!fields) return;
-  fields.parentElement.removeChild(fields);
+  document.querySelector(".hof-input-fields").classList.add("hide");
 }
 
 function saveHofer() {
@@ -93,8 +70,48 @@ function saveHofer() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      Accept: "application/json",
     },
-    body: { hofer },
+    body: JSON.stringify({ hofer }),
   });
-  fetch(req).then(resJson).then(console.log).catch(console.error);
+  fetch(req)
+    .then(resJson)
+    .then((res) => {
+      console.log("Creation res:", res);
+      showHofer(hofer);
+    })
+    .catch(console.error);
+}
+
+function showHofer(hofer) {
+  const display = el(
+    "div",
+    "hofer-data",
+    {},
+    el("h3", "", { name: hofer.name }, t(hofer.name)),
+    el("h4", "", {}, t(hofer.date)),
+    el("img", "", { src: hofer.img }),
+    el("a", "", { href: hofer.map }, t("Link to map")),
+    el(
+      "button",
+      "",
+      { onclick: `removeHofer("${hofer.name}")` },
+      t("Remove from Wall")
+    )
+  );
+  document.querySelector("#hof").appendChild(display);
+}
+
+function removeHofer(name) {
+  const del = confirm(`Do you really want to delete ${name}`);
+  if (del) {
+    fetch(`http://localhost:8080/wpgbingo/hof/${name}`, { method: "DELETE" })
+      .then(resJson)
+      .then(console.log)
+      .catch(console.error);
+    const displayToRemove = document.querySelector(
+      `h3[name="${name}"]`
+    ).parentElement;
+    displayToRemove.parentElement.removeChild(displayToRemove);
+  }
 }

@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="js/utils.js"></script>
   <script defer src="js/el.js"></script>
   <script defer src="admin.js"></script>
+  <link rel="stylesheet" href="admin.css">
   <title>Admin</title>
 </head>
 <body>
@@ -16,8 +18,16 @@
   </div>
   <hr>
   <div id="hof">
-    <h2>Wall of Famers</h2>
-    <button onclick="handleHofInput()">New Wall of Famer</button>
+    <h2>Wall of Famers<span id="wof-count"></span></h2>
+    <button onclick="handleHofInput(event)">New Wall of Famer</button>
+    <div class="hof-input-fields hide">
+      <input type="text" name="name" id="name-input" placeholder="Name">
+      <input type="date" name="date" id="date-input">
+      <input type="text" name="img" id="img-input" placeholder="Image Link">
+      <input type="text" name="map" id="map-input" placeholder="Map Link">
+      <button onclick="saveHofer()">Create</button>
+      <button onclick="cancelHofer()">Cancel</button>
+    </div>
   </div>
 </body>
 </html>

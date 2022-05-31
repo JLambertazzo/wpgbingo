@@ -8,3 +8,7 @@ function el(tag, classes, attributes, ...children) {
   children.forEach((child) => element.appendChild(child));
   return element;
 }
+
+function t(text) {
+  return document.createTextNode(text);
+}
