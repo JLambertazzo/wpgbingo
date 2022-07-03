@@ -11,19 +11,51 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="shortcut icon" href="img/bike_ico.ico" type="image/x-icon" />
-    <script src="js/date-and-time.min.js"></script>
+    <script
+      defer
+      src="//cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script defer src="js/date-and-time.min.js"></script>
     <script defer src="js/el.js"></script>
     <script defer src="js/utils.js"></script>
     <script defer src="wall.js"></script>
     <title>Wall of Fame</title>
   </head>
   <body>
-    <div class="top-blue"></div>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#"
+                >Wall of Fame</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="left-blue"></div>
-    <a href="/">
-      <div class="wof-link">Back home →</div>
-    </a>
     <h1 class="wall-title">HARDCORE Wall of Fame</h1>
     <h2 class="wall-sub">Completed all 25 squares in one day</h2>
     <div class="wof" id="wof">
