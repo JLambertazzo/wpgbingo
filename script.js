@@ -6,9 +6,6 @@ Swal.fire({
   icon: "info",
 });
 
-// this logs activity on the site, just a timestamp
-fetch("https://gen-pup.herokuapp.com/visits/wpgbingo", { method: "POST" });
-
 const images = document.querySelectorAll("img.card-img-top");
 const lightboxContainer = document.querySelector(".lightbox-shade");
 const cards = [...document.querySelectorAll(".card")].sort((a, b) => {

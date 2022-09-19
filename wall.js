@@ -1,17 +1,10 @@
-// fetch("http://localhost:8080/wpgbingo/hof")
-fetch("https://gen-pup.herokuapp.com/wpgbingo/hof")
-  .then(resJson)
-  .then(({ hofers }) => {
-    document.querySelector(".loading-text").classList.add("hide");
-    hofers.forEach(showHofer);
-    showHofer({
-      name: "This could be you!",
-      date: "",
-      img: "img/1seineriveratperimeter.jpeg",
-      map: "",
-    });
-  })
-  .catch(console.error);
+hof.forEach(showHofer);
+showHofer({
+  name: "This could be you!",
+  date: "",
+  img: "img/1seineriveratperimeter.jpeg",
+  map: "",
+});
 
 function formatDate(dateString) {
   if (!dateString) return "";
