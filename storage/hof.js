@@ -17,4 +17,10 @@ const hof = [
     img: "https://dgtzuqphqg23d.cloudfront.net/XyWZrgBRC5pGvZIzuI9VMUHDg7F_R0lXne86T4wBTKM-2048x1536.jpg",
     map: "https://www.strava.com/activities/7405446070",
   },
+  {
+    name: "Colin Viebrock",
+    date: "2022-09-30",
+    img: "https://dgtzuqphqg23d.cloudfront.net/mOyNoZ24rr6HvkVCQBeqQx67X2dguGA4SDAkdX8K5k4-2048x1539.jpg",
+    map: "https://www.strava.com/activities/7891785612",
+  },
 ];
