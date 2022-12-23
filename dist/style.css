@@ -233,7 +233,8 @@ body {
   text-align: center;
 }
 
-.wof {
+.wof,
+.posts-content {
   display: flex;
   flex-wrap: wrap;
   row-gap: 1rem;
@@ -250,4 +251,17 @@ body {
 .loading-text {
   width: 100vw;
   text-align: center;
+}
+
+.post {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  background: lightgray;
+  color: black;
+  justify-content: space-between;
+  padding: 0.35rem;
+  margin: 0.5rem;
+  font-size: large;
+  font-weight: 600;
 }
