@@ -2,8 +2,8 @@ const hof = [
   {
     name: "Dave Routhier",
     date: "2022-05-21",
-    img: "https://wpgcyclebingo.com/img/dave.jpg",
-    map: "https://wpgcyclebingo.com/img/dave_map.jpg",
+    img: "https://wpgcyclebingo.com/easier/img/dave.jpg",
+    map: "https://wpgcyclebingo.com/easier/img/dave_map.jpg",
   },
   {
     name: "Dan Tougas",
