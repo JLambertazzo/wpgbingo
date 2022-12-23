@@ -9,14 +9,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="overflow-hidden w-screen h-screen bg-gray-100 font-sans">
-    <div class="grid grid-cols-2">
-        <div class="text-left grid mx-4">
+    <div class="grid grid-rows-2-auto md:grid-cols-2 h-full w-full md:h-auto">
+        <div class="text-left md:grid mx-4">
             <div class="my-1">
                 <a class="text-blue-700 underline mr-1 hover:text-gray-900" href="/easier/wall">Wall of Fame</a>
                 <a class="text-blue-700 underline hover:text-gray-900" href="/easier/blog">Blog</a>
             </div>
-            <div>
-                <h1 class="font-bold text-7xl text-blue-700">Welcome to <br>Winnipeg Bike Bingo!</h1>
+            <div class="md:my-0 my-12">
+                <h1 class="font-bold text-5xl lg:text-7xl text-blue-700">Welcome to <br>Winnipeg Bike Bingo!</h1>
                 <div class="my-4 flex flex-row">
                     <a class="drop-shadow-xl m-1 rounded-lg bg-gray-300 text-gray-900 p-2" aria-disabled="true" href="/easier">Easier</a>
                     <a class="drop-shadow-xl m-1 rounded-lg bg-blue-700 text-gray-100 p-2" href="#">Harder (Coming Soon...)</a>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="w-full h-full grid place-items-end overflow-hidden">
-            <img src="img/map.jpg" alt="Bike Route Map Sample" class="h-full w-auto" />
+            <img src="img/map.jpg" alt="Bike Route Map Sample" class="w-full h-auto md:h-full md:w-auto" />
         </div>
     </div>
 </body>

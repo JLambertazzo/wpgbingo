@@ -2,8 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.bg-map {
-    background-image: url('test.jpg');
-    background-size: cover;
-}
