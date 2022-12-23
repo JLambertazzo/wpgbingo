@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tw:build": "tailwindcss build src/tailwind.css -o dist/style.css",
+    "tw:build": "tailwindcss build -i src/tailwind.css -o src/style.css",
     "site:rm": "rimraf dist/*",
-    "site:build": "copyfiles -u 1 -e \"**/tailwind.css\" src/**/*.{html,js,css} ./dist/",
+    "site:build": "copyfiles -u 1 -e \"**/tailwind.css\" src/**/*.{html,js,css,jpg,jpeg,ico,JPG} ./dist/",
     "build": "run-s tw:build site:rm site:build",
-    "tw:watch": "tailwindcss build src/tailwind.css -o dist/style.css --watch",
-    "site:watch": "nodemon -e html,js,css -w src --exec \"npm run site:build\"",
+    "site:watch": "nodemon -e html,js,css -w src --exec \"npm run tw:build && npm run site:rm && npm run site:build\"",
     "serve": "npx serve dist",
-    "dev": "run-p tw:watch site:watch serve"
+    "dev": "run-p site:watch serve"
   },
   "repository": {
     "type": "git",
