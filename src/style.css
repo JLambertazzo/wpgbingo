@@ -523,14 +523,9 @@ video {
   margin: 0.25rem;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.my-1{
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+.mx-12{
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .my-4{
