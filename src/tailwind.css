@@ -2,3 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bingo-card {
+        @apply bg-white p-4 text-center aspect-square text-sm border-2 border-gray-300 border-dashed first:border-l-0 last:border-r-0 align-top border-b-0;
+        width: 150px;
+    }
+
+    .bingo-card img {
+        @apply h-auto aspect-square border-4 border-gray-100 rounded-lg;
+    }
+
+    .bingo-selected-card {
+        @apply bg-green-200;
+    }
+
+    .bingo-selected-card img {
+        @apply border-green-100;
+    }
+}
