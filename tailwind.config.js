@@ -8,6 +8,10 @@ module.exports = {
     },
     gridTemplateRows: {
       "2-auto": "repeat(2, minmax(0, auto))",
+      "bingo": "repeat(5, minmax(0, 1fr))",
+    },
+    gridTemplateColumns: {
+      "bingo": "repeat(5, minmax(0, 1fr))",
     },
     extend: {},
   },
