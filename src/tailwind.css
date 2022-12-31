@@ -25,4 +25,8 @@
     .bingo-selected-card img {
         @apply border-green-100;
     }
+
+    .card-width {
+        width: 150px;
+    }
 }

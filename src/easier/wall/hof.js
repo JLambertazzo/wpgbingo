@@ -8,7 +8,7 @@ const hof = [
   {
     name: "Dan Tougas",
     date: "2022-07-01",
-    img: "https://dgtzuqphqg23d.cloudfront.net/YyF6rq9MGfUIjewd6UMHoyWcCO1rof6BAtL-6zo7BtE-1152x2048.jpg",
+    img: "/wall/img/dantougas.jpg",
     map: "https://www.strava.com/activities/7399664024",
   },
   {
