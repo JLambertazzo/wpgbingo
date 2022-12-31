@@ -2,111 +2,161 @@ const cards = [
     [
         {
             name: 'Fraipont Park',
-            img: 'https://imgur.com/xaKUZzj.jpg'
+            description: 'The lookout structure is in the new Bonavista neighbourhood, off Evelyne Reese Blvd',
+            img: 'https://imgur.com/xaKUZzj.jpg',
+            full_img: 'https://imgur.com/3rd02fb.jpg'
         },
         {
             name: 'Learning Nook',
-            img: 'https://imgur.com/4PZW93w.jpg'
+            description: 'A little nook in Bois Des Esprits, just north of Shorehill Drive',
+            img: 'https://imgur.com/4PZW93w.jpg',
+            full_img: 'https://imgur.com/2INCrvi.jpg'
         },
         {
             name: 'IG Field',
-            img: 'https://imgur.com/2fG4JOL.jpg'
+            description: 'IG Field is on the University of Manitoba campus',
+            img: 'https://imgur.com/2fG4JOL.jpg',
+            full_img: 'https://imgur.com/M4zERw1.jpg'
         },
         {
             name: 'Pollock Island',
-            img: 'https://imgur.com/ZPZ7u98.jpg'
+            description: 'See the La Salle River empty into the Red at Pollock Island, via St. Pierre Street',
+            img: 'https://imgur.com/ZPZ7u98.jpg',
+            full_img: 'https://imgur.com/arhLi9H.jpg'
         },
         {
-            name: 'Bridgewater Fountain',
-            img: 'https://imgur.com/4dxgthI.jpg'
+            name: 'Bridgwater Lakes Fountain',
+            description: 'There are a few fountains in Bridgwater. The most impressive is Bridgwater Lakes, west of Kenaston',
+            img: 'https://imgur.com/4dxgthI.jpg',
+            full_img: 'https://imgur.com/760iCcM.jpg'
         }
     ],
     [
         {
             name: 'John Bruce Bridge',
-            img: 'https://imgur.com/35wYb1J.jpg'
+            description: 'A foot bridge over the Seine river on John Bruce Road',
+            img: 'https://imgur.com/35wYb1J.jpg',
+            full_img: 'https://imgur.com/rxgMYOf.jpg'
         },
         {
             name: 'Bear Carving',
-            img: 'https://imgur.com/wiMtnY7.jpg'
+            description: 'A large carving on Kingston Crescent, south of the foot bridge',
+            img: 'https://imgur.com/wiMtnY7.jpg',
+            full_img: 'https://imgur.com/pBBOi2L.jpg'
         },
         {
             name: 'Tea Kettle',
-            img: 'https://imgur.com/xxDfaV9.jpg'
+            description: 'The tea kettle is at the Beaumont rapid transit station',
+            img: 'https://imgur.com/xxDfaV9.jpg',
+            full_img: 'https://imgur.com/GlVydex.jpg'
         },
         {
             name: 'Row Row Row',
-            img: 'https://imgur.com/jO3QAYU.jpg'
+            description: 'Row Row Row is an art installation at the Clarence rapid transit station',
+            img: 'https://imgur.com/jO3QAYU.jpg',
+            full_img: 'https://imgur.com/e2EYPOP.jpg'
         },
         {
             name: 'Sod House',
-            img: 'https://imgur.com/a3pYIc2.jpg'
+            description: 'The sod house is along the main bike path through Fort Whyte Alive',
+            img: 'https://imgur.com/a3pYIc2.jpg',
+            full_img: 'https://imgur.com/QVPL1L9.jpg'
         }
     ],
     [
         {
             name: 'Niakwa Bridge',
-            img: 'https://imgur.com/fG3Yflx.jpg'
+            description: 'A foot bridge over the Seine river at Niakwa Rd.',
+            img: 'https://imgur.com/fG3Yflx.jpg',
+            full_img: 'https://imgur.com/3GEXpUo.jpg'
         },
         {
-            name: 'Ghandhi Statue',
-            img: 'https://imgur.com/aUePzci.jpg'
+            name: 'Gandhi Statue',
+            description: 'The statue of Gandhi is near the Canadian Museum for Human Rights',
+            img: 'https://imgur.com/aUePzci.jpg',
+            full_img: 'https://imgur.com/5Tk6Ma6.jpg'
         },
         {
             name: 'Winnipeg Sign',
-            img: 'https://imgur.com/41sPEAc.jpg'
+            description: 'The big sign at the Forks',
+            img: 'https://imgur.com/41sPEAc.jpg',
+            full_img: 'https://imgur.com/ZshSYLF.jpg'
         },
         {
             name: 'Arctic Alley',
-            img: 'https://imgur.com/zPhJG5m.jpg'
+            description: 'Arctic Alley is a colourful back lane near Canora Street and Wolseley Ave.',
+            img: 'https://imgur.com/zPhJG5m.jpg',
+            full_img: 'https://imgur.com/VnhYUtG.jpg'
         },
         {
             name: 'Harte Trail Train',
-            img: 'https://imgur.com/Zi3Ydeq.jpg'
+            description: 'The site of a former train station along the Harte Trail near Elmhurst Road',
+            img: 'https://imgur.com/Zi3Ydeq.jpg',
+            full_img: 'https://imgur.com/H7FcFLg.jpg'
         }
     ],
     [
         {
             name: 'Voyageur Bridge',
-            img: 'https://imgur.com/CQCboPg.jpg'
+            description: 'The Voyageur foot bridge is just north of Provencher near Des Meurons',
+            img: 'https://imgur.com/CQCboPg.jpg',
+            full_img: 'https://imgur.com/RnczMxu.jpg'
         },
         {
             name: 'Disraeli Pedestrian Bridge',
-            img: 'https://imgur.com/mtnAFUw.jpg'
+            description: 'The active transportation bridge next to the Disraeli freeway',
+            img: 'https://imgur.com/mtnAFUw.jpg',
+            full_img: 'https://imgur.com/LaAAfjv.jpg'
         },
         {
             name: 'Seven Oaks House',
-            img: 'https://imgur.com/RQHUD9q.jpg'
+            description: 'Winnipeg’s oldest remaining house, on Mac Street, near Scotia Street.',
+            img: 'https://imgur.com/RQHUD9q.jpg',
+            full_img: 'https://imgur.com/9vPDDa7.jpg'
         },
         {
             name: 'Fort Garry Artillery',
-            img: 'https://imgur.com/ZOfKBRP.jpg'
+            description: 'The Fort Garry Horse Museum and Archives near Cathedral Ave. and McGregor St.',
+            img: 'https://imgur.com/ZOfKBRP.jpg',
+            full_img: 'https://imgur.com/zzu7vql.jpg'
         },
         {
             name: 'Garbage Hill',
-            img: 'https://imgur.com/NQAWRpz.jpg'
+            description: 'Garbage Hill, off Wellington Ave., offers a nice view of the skyline.',
+            img: 'https://imgur.com/NQAWRpz.jpg',
+            full_img: 'https://imgur.com/xBcZY0z.jpg'
         }
     ],
     [
         {
             name: 'Hi Neighbour',
-            img: 'https://imgur.com/Us0TXaE.jpg'
+            description: 'The Hi Neighbour statue in the middle of Regent Ave',
+            img: 'https://imgur.com/Us0TXaE.jpg',
+            full_img: 'https://imgur.com/SGXy36f.jpg'
         },
         {
             name: 'Life Journey',
-            img: 'https://imgur.com/ukGK5WK.jpg'
+            description: 'The evolution of a butterfly, on the Northeast Pioneers Greenway trail near Concordia Ave',
+            img: 'https://imgur.com/ukGK5WK.jpg',
+            full_img: 'https://imgur.com/0GcIESb.jpg'
         },
         {
             name: 'Bunn\'s Creek',
-            img: 'https://imgur.com/K0p2tMo.jpg'
+            description: 'The Bunn’s Creek trail, off the Northeast Pioneers Greenway trail',
+            img: 'https://imgur.com/K0p2tMo.jpg',
+            full_img: 'https://imgur.com/K8Vr9Wt.jpg'
         },
         {
             name: 'McBeth Park',
-            img: 'https://imgur.com/RR4XNMJ.jpg'
+            description: 'McBeth Park, home to huge trees, is a little north of Kildonan Park',
+            img: 'https://imgur.com/RR4XNMJ.jpg',
+            full_img: 'https://imgur.com/QjwiD1U.jpg'
         },
         {
             name: 'Dr. Jose Rizal',
-            img: 'https://imgur.com/3EjJG4B.jpg'
+            description: 'The statue of Filipino leader Jose Rizal sits near Adsum Drive',
+            img: 'https://imgur.com/3EjJG4B.jpg',
+            full_img: 'https://imgur.com/hFXMW4e.jpg'
         }
     ],
 ]
