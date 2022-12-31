@@ -3,7 +3,7 @@ const toCardElement = (card, index) => {
     'td',
     'bingo-card',
     { id: `card-${index}`},
-    el('img', '', {src: card.img, alt: card.name, width: 125, height: 125}),
+    el('img', 'card-img', {src: card.img, alt: card.name, width: 125, height: 125}),
     el('h2', 'w-fit text-gray-600 text-left', {}, t(card.name))
 )}
 
@@ -19,7 +19,8 @@ const tap = (tapFunction) => (value) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    cards.map(toCardRow).forEach(appendRow('#bingo-container'))
+    cards.map(toCardRow).forEach(appendRow('#bingo-container'));
+    [...document.querySelectorAll('.card-img')].forEach((el) => el.addEventListener('click', imgPopup(el.src)))
 })
 
 const getRandomBingoIds = () => routes[Math.floor(Math.random() * routes.length)]
@@ -48,4 +49,15 @@ const selectHardcoreBingo = () => {
     clearSelectedCards()
     applySelectedRoute(hardcodeRoute)
     enableMapButton()
+}
+
+const imgPopup = (src) => () => {
+    const card = cards.flat().find((card) => card.img === src)
+    Swal.fire({
+        imageUrl: card.full_img,
+        imageAlt: `${card.name}: ${card.description}}`,
+        title: card.name,
+        text: card.description,
+        confirmButtonText: 'Close'
+    })
 }

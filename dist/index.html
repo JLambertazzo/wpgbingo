@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/bike_ico.ico" type="image/x-icon" />
     <title>WPG Bike Bingo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="/warning.js"></script>
 </head>
 <body class="overflow-hidden w-screen h-screen bg-gray-100 font-sans">
-    <div class="grid grid-rows-2-auto md:grid-cols-2 h-full w-full md:h-auto">
-        <div class="text-left md:grid mx-12">
+    <div class="flex flex-col justify-between md:flex-row h-full w-full md:h-auto">
+        <div class="text-left mx-12 flex flex-col justify-between md:w-1/3">
             <div class="my-4">
                 <a class="text-blue-700 underline mr-1 hover:text-gray-900" href="/easier/wall">Wall of Fame</a>
-                <a class="text-blue-700 underline hover:text-gray-900" href="/easier/blog">Blog</a>
+                <!-- <a class="text-blue-700 underline hover:text-gray-900" href="/easier/blog">Blog</a> -->
             </div>
             <div class="md:my-0 my-12">
                 <h1 class="font-bold text-5xl lg:text-7xl text-blue-700">Welcome to <br>Winnipeg Bike Bingo!</h1>
                 <div class="my-4 flex flex-row">
-                    <a class="drop-shadow-xl m-1 rounded-lg bg-gray-300 text-gray-900 p-2" aria-disabled="true" href="/easier">Easier</a>
-                    <a class="drop-shadow-xl m-1 rounded-lg bg-blue-700 text-gray-100 p-2" href="/harder">Harder (Coming Soon...)</a>
+                    <a class="drop-shadow-xl m-1 rounded-lg bg-blue-700 text-gray-100 py-2 px-4" aria-disabled="true" href="/easier">Easier</a>
+                    <a class="drop-shadow-xl m-1 rounded-lg bg-gray-300 text-gray-900 py-2 px-4" href="/harder">Harder</a>
                     <a href="/help"><span class="hover:bg-gray-200 font-icon rounded-lg p-1 m-1 inline-block place-content-end text-3xl text-blue-700" id="help-icon">help_outline</span></a>
                 </div>
             </div>
+            <div></div>
         </div>
-        <div class="w-full h-full grid place-items-end overflow-hidden">
+        <div class="h-full grid place-items-end overflow-hidden">
             <img src="img/map.jpg" alt="Bike Route Map Sample" class="w-full h-auto md:h-full md:w-auto" />
         </div>
     </div>
