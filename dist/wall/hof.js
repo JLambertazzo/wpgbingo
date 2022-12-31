@@ -1,8 +1,10 @@
-const hof = [
+const harderHallOfFame = []
+
+const easierHallOfFame = [
   {
     name: "Dave Routhier",
     date: "2022-05-21",
-    img: "https://wpgcyclebingo.com/easier/img/dave.jpg",
+    img: "/wall/img/daverouthier.jpg",
     map: "https://wpgcyclebingo.com/easier/img/dave_map.jpg",
   },
   {
@@ -14,13 +16,13 @@ const hof = [
   {
     name: "Colin Fast and Steve Lambert",
     date: "2022-07-02",
-    img: "https://dgtzuqphqg23d.cloudfront.net/XyWZrgBRC5pGvZIzuI9VMUHDg7F_R0lXne86T4wBTKM-2048x1536.jpg",
+    img: "/wall/img/colinfastandstevelambert.jpg",
     map: "https://www.strava.com/activities/7405446070",
   },
   {
     name: "Colin Viebrock",
     date: "2022-09-30",
-    img: "https://dgtzuqphqg23d.cloudfront.net/mOyNoZ24rr6HvkVCQBeqQx67X2dguGA4SDAkdX8K5k4-2048x1539.jpg",
+    img: "/wall/img/colinviebrock.jpg",
     map: "https://www.strava.com/activities/7891785612",
   },
 ];
