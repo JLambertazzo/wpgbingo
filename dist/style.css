@@ -769,6 +769,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .place-content-end{
   place-content: end;
 }
