@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="A bingo game that encourages people to discover different areas of Winnipeg on bicycle"
@@ -33,277 +33,33 @@
       content="/easier/img/14assiniboinepark.jpeg"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/easier/style.css" />
-    <link rel="stylesheet" href="/easier/navbar.css" />
     <link rel="shortcut icon" href="/img/bike_ico.ico" type="image/x-icon" />
     <title>WPG Bike Bingo</title>
-    <script
-      defer
-      src="//cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <script defer src="/easier/desc.js" defer></script>
-    <script defer src="/easier/script.js" defer></script>
-  </head>
-  <body>
-    <div class="lightbox-shade hide"></div>
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="/"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/wall">Wall of Fame</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/easier/blog">Blog</a>
-            </li>
-          </ul>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="/js/el.js"></script>
+    <script defer src="/easier/cards.js"></script>
+    <script defer src="/easier/routes.js"></script>
+    <script defer src="/easier/script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <main class="mx-auto w-fit h-fit shadow-lg m-4 p-2 rounded-lg bg-gray-100">
+    <div class="flex justify-start">
+            <button onclick="selectRandomBingo()" class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-blue-700 text-gray-100 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">Generate Bingo</button>
+          <button onclick="selectHardcoreBingo()" class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">Hardcore Challenge</button>
         </div>
-      </div>
-    </nav>
-    <div class="left-blue"></div>
-    <div class="bingo-container">
-      <h1>Winnipeg Cycling Bingo</h1>
-      <h2 class="subheader">
-        Want a cycling challenge? Choose a line of five squares horizontally,
-        vertically or diagonally<br />or
-      </h2>
-      <div class="all-btn">
-        <div class="controls">
-          <div class="controls-container">
-            <button class="btn btn-cornflowerblue" onclick="handleRandom()">
-              Assign me a Random Bingo
-            </button>
-            <h2>or</h2>
-            <button class="btn btn-success" onclick="handleRandomLoop()">
-              How about a loop?
-            </button>
-            <h2>or</h2>
-            <button class="btn btn-warning" onclick="handleHardcore()">
-              HARDCORE. All 25 squares
-            </button>
-          </div>
-        </div>
-        <hr class="btn-hr hide" />
-        <div class="accept hide">
-          <a id="map-link" class="btn btn-cornflowerblue" target="_blank"
-            >I accept. Map it!</a
-          >
-        </div>
-      </div>
-      <div class="bingo-row">
-        <div class="ms-2 m-ms-1"><h1>B</h1></div>
-        <div class="ms-2 m-ms-1"><h1>I</h1></div>
-        <div class="ms-2 m-ms-1"><h1>N</h1></div>
-        <div class="ms-2 m-ms-1"><h1>G</h1></div>
-        <div class="ms-2 m-ms-1"><h1>O</h1></div>
-      </div>
-      <div class="bingo-row">
-        <div class="card col-2 m-md-1 p-1" key="1">
-          <img
-            src="/easier/img/1seineriveratperimeter.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Seine River @ Perimeter</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="2">
-          <img
-            src="/easier/img/2bishopgrandinboulevard.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Bishop Grandin Boulevard</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="3">
-          <img
-            src="/easier/img/3investorsgroupfield.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Investors Group Field</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="4">
-          <img
-            src="/easier/img/4fortwhytealive.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Fort Whyte Alive</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="5">
-          <img src="/easier/img/5theleaf.jpeg" class="card-img-top mt-2" alt="TBA" />
-          <h6 class="card-title">The Leaf</h6>
-        </div>
-      </div>
-      <div class="bingo-row">
-        <div class="card col-2 m-md-1 p-1" key="6">
-          <img
-            src="/easier/img/6boisdesesprit.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Bois des Esprit</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="7">
-          <img
-            src="/easier/img/7elmparkbridge.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Elm Park Bridge</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="8">
-          <img
-            src="/easier/img/8roostertownkettle.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Rooster Town Kettle</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="9">
-          <img
-            src="/easier/img/9lyrictheater.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Lyric Theater</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="10">
-          <img
-            src="/easier/img/10grantsoldmill.JPG"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Grant's Old Mill</h6>
-        </div>
-      </div>
-      <div class="bingo-row">
-        <div class="card col-2 m-md-1 p-1" key="11">
-          <img
-            src="/easier/img/11stbcathedral.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">St. Boniface Cathedral</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="12">
-          <img src="/easier/img/12cmhr.jpeg" class="card-img-top mt-2" alt="TBA" />
-          <h6 class="card-title">Canadian Museum for Human Rights</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="13">
-          <img src="/easier/img/13theforks.jpeg" class="card-img-top mt-2" alt="TBA" />
-          <h6 class="card-title">The Forks</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="14">
-          <img
-            src="/easier/img/14assiniboinepark.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Assiniboine Park</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="15">
-          <img
-            src="/easier/img/15airforceway.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Air Force Way</h6>
-        </div>
-      </div>
-      <div class="bingo-row">
-        <div class="card col-2 m-md-1 p-1" key="16">
-          <img
-            src="/easier/img/16transconabioreserve.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Transcona Bioreserve</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="17">
-          <img
-            src="/easier/img/17fortgibraltar.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Fort Gibraltar</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="18">
-          <img src="/easier/img/18shawpark.jpeg" class="card-img-top mt-2" alt="TBA" />
-          <h6 class="card-title">Shaw Park</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="19">
-          <img src="/easier/img/19mbleg.jpeg" class="card-img-top mt-2" alt="TBA" />
-          <h6 class="card-title">Manitoba Legislature</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="20">
-          <img
-            src="/easier/img/20brooksidecemetery.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Brookside Cemetery</h6>
-        </div>
-      </div>
-      <div class="bingo-row">
-        <div class="card col-2 m-md-1 p-1" key="21">
-          <img
-            src="/easier/img/21endoftransconatrail.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">End of Transcona Trail</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="22">
-          <img
-            src="/easier/img/22bunnscreek.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Bunn's Creek</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="23">
-          <img
-            src="/easier/img/23chiefpeguistrail.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Chief Peguis Trail</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="24">
-          <img
-            src="/easier/img/24kildonanpark.jpeg"
-            class="card-img-top mt-2"
-            alt="TBA"
-          />
-          <h6 class="card-title">Kildonan Park</h6>
-        </div>
-        <div class="card col-2 m-md-1 p-1" key="25">
-          <img src="/easier/img/25pilehenge.jpeg" class="card-img-top mt-2" alt="TBA" />
-          <h6 class="card-title">Pilehenge</h6>
-        </div>
-      </div>
+        <table id="bingo-container" class="my-2 rounded-md p-2 w-fit mx-auto">
+            <tr>
+                <th class="text-2xl text-gray-700 font-semibold">B</th>
+                <th class="text-2xl text-gray-700 font-semibold">I</th>
+                <th class="text-2xl text-gray-700 font-semibold">N</th>
+                <th class="text-2xl text-gray-700 font-semibold">G</th>
+                <th class="text-2xl text-gray-700 font-semibold">O</th>
+            </tr>
+        </table>
+    </main>
+    <div class="sticky bottom-0 right-0">
+        <button id="map-button" disabled class="absolute right-8 bottom-8 w-16 h-16 sm:w-24 sm:h-24 bg-blue-700 active:bg-blue-800 shadow-xl hover:shadow-lg active:shadow-sm text-gray-100 rounded-full text-base font-light sm:text-2xl sm:font-bold disabled:bg-gray-400 disabled:text-gray-600 disabled:opacity-40 disabled:border-dashed border-none border-gray-600 border-2 tracking-tighter">Map It</button>
     </div>
-  </body>
+</body>
 </html>
