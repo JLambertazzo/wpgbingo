@@ -7,7 +7,7 @@
     "tw:build": "tailwindcss build -i src/tailwind.css -o src/style.css",
     "tw:watch": "tailwindcss build -i src/tailwind.css -o src/style.css --watch",
     "site:rm": "rimraf dist/*",
-    "site:build": "copyfiles -u 1 -e \"**/tailwind.css\" src/**/*.{html,js,css,jpg,jpeg,ico,JPG,png} ./dist/",
+    "site:build": "copyfiles -u 1 -e \"**/tailwind.css\" src/**/*.{html,js,css,jpg,jpeg,ico,JPG,png,gpx} ./dist/",
     "build": "run-s tw:build site:rm site:build",
     "site:watch": "nodemon -e html,js,css -w src --exec \"npm run tw:build && npm run site:rm && npm run site:build\"",
     "serve:dev": "npx serve src",

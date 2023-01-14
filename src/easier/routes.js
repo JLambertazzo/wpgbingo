@@ -17,4 +17,4 @@ const routes = [
     {ids: [11,12,13,16,18,21,22,23], url: 'https://t.ly/G4FH'}
 ]
 
-const hardcodeRoute = {ids: new Array(25).fill(0).map((_, i) => i + 1), url: 'https://t.ly/BUCq'}
+const hardcodeRoute = {ids: new Array(25).fill(0).map((_, i) => i + 1), url: 'https://bit.ly/wpg-bingo-hardcore-easier'}
