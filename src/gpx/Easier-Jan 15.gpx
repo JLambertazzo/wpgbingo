@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" version="1.1" creator="https://onthegomap.com">
 <metadata>
-    <name>onthegomap-129</name>
+    <name>Easier-with-marks</name>
     <author>
         <name>gpx.studio</name>
         <link href="https://gpx.studio"></link>
@@ -17,8 +17,8 @@
     <name>Bois Des Esprits carving</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.83657083901499" lon="-97.10010766983034">
-    <ele>230.2</ele>
+<wpt lat="49.836755942717296" lon="-97.09995478391649">
+    <ele>231.5</ele>
     <name>Antlers on the greenway</name>
     <sym>Circle with X</sym>
 </wpt>
@@ -27,7 +27,7 @@
     <name>Elm Park bridge</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.84808397841738" lon="-97.16641187667848">
+<wpt lat="49.848063224022496" lon="-97.16639578342439">
     <ele>229.3</ele>
     <name>Tea kettle</name>
     <sym>Circle with X</sym>
@@ -37,8 +37,8 @@
     <name>Legislature</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.88700353475567" lon="-97.12969779968263">
-    <ele>235.5</ele>
+<wpt lat="49.886803070152" lon="-97.1304488182068">
+    <ele>231.5</ele>
     <name>The Forks</name>
     <sym>Circle with X</sym>
 </wpt>
@@ -52,7 +52,7 @@
     <name>Shaw Park</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.88940904506292" lon="-97.12233781814577">
+<wpt lat="49.88930536174611" lon="-97.12231636047365">
     <ele>232.0</ele>
     <name>St. Boniface Cathedral</name>
     <sym>Circle with X</sym>
@@ -77,8 +77,8 @@
     <name>Bunn&apos;s Creek</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.94789927917462" lon="-97.08316683769227">
-    <ele>229.9</ele>
+<wpt lat="49.94788719746432" lon="-97.08301797509195">
+    <ele>230.0</ele>
     <name>Chief Peguis trail wolves</name>
     <sym>Circle with X</sym>
 </wpt>
@@ -87,8 +87,8 @@
     <name>Kildonan Park (Rainbow Stage)</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.95110945481345" lon="-97.27661848068239">
-    <ele>238.0</ele>
+<wpt lat="49.95014297283229" lon="-97.2761356830597">
+    <ele>238.1</ele>
     <name>Pilehenge</name>
     <sym>Circle with X</sym>
 </wpt>
@@ -97,8 +97,8 @@
     <name>Brookside Cemetery</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.889395220633524" lon="-97.23743677139284">
-    <ele>236.2</ele>
+<wpt lat="49.88930536174611" lon="-97.23748505115509">
+    <ele>236.4</ele>
     <name>Air Force Way</name>
     <sym>Circle with X</sym>
 </wpt>
@@ -107,7 +107,7 @@
     <name>Grant&apos;s Old Mill</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.874116806505" lon="-97.23333835601808">
+<wpt lat="49.87201478210099" lon="-97.23050594329835">
     <ele>234.9</ele>
     <name>Assiniboine Park</name>
     <sym>Circle with X</sym>
@@ -117,13 +117,13 @@
     <name>Lyric Theatre</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.86891689516034" lon="-97.22342491149904">
-    <ele>235.1</ele>
+<wpt lat="49.86942515586213" lon="-97.22390770912172">
+    <ele>233.3</ele>
     <name>The Leaf</name>
     <sym>Circle with X</sym>
 </wpt>
-<wpt lat="49.82256318039504" lon="-97.22471237182617">
-    <ele>232.0</ele>
+<wpt lat="49.822801981288606" lon="-97.22472846508028">
+    <ele>232.4</ele>
     <name>Fort Whyte Alive tipi</name>
     <sym>Circle with X</sym>
 </wpt>

@@ -52,6 +52,7 @@ const selectHardcoreBingo = () => {
 }
 
 const imgPopup = (src) => () => {
+  console.log('sou haida', src)
   const card = cards.flat().find((card) => src.endsWith(card.img))
   Swal.fire({
       imageUrl: card.full_img,

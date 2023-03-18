@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" version="1.1" creator="https://onthegomap.com">
 <metadata>
-    <name>new-double-hardcore</name>
+    <name>FINAL- double hardcore with markers</name>
     <author>
         <name>gpx.studio</name>
         <link href="https://gpx.studio"></link>
     </author>
 </metadata>
-<wpt lat="49.8100054382513" lon="-97.06673026084901">
-    <ele>232.3</ele>
+<wpt lat="49.81021660693784" lon="-97.0668911933899">
+    <ele>232.2</ele>
     <name>The big hand</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.82474349262935" lon="-97.0635437965393">
-    <ele>230.5</ele>
+<wpt lat="49.824736571158674" lon="-97.06306099891664">
+    <ele>231.0</ele>
     <name>Fraipont Park </name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.82386445793168" lon="-97.07973361015321">
+<wpt lat="49.823899065898985" lon="-97.07980871200563">
     <ele>231.7</ele>
     <name>Learning Nook</name>
     <sym>Anchor</sym>
@@ -27,8 +27,8 @@
     <name>John Bruce bridge</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.83661235766405" lon="-97.1000647544861">
-    <ele>230.2</ele>
+<wpt lat="49.836769782217964" lon="-97.09996685385707">
+    <ele>231.5</ele>
     <name>Antlers</name>
     <sym>Anchor</sym>
 </wpt>
@@ -47,8 +47,8 @@
     <name>Elm Park bridge</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.84793869746612" lon="-97.16624021530153">
-    <ele>230.0</ele>
+<wpt lat="49.84800787892594" lon="-97.1663796901703">
+    <ele>229.3</ele>
     <name>Tea kettle</name>
     <sym>Anchor</sym>
 </wpt>
@@ -57,13 +57,13 @@
     <name>Row Row Row</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.80931307543972" lon="-97.14229345321657">
-    <ele>232.5</ele>
+<wpt lat="49.8090568986893" lon="-97.1423363685608">
+    <ele>231.4</ele>
     <name>Investors Group Field</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.75662422456893" lon="-97.14182454417035">
-    <ele>228.2</ele>
+<wpt lat="49.756616644205" lon="-97.14176645366376">
+    <ele>228.0</ele>
     <name>Pollock Island</name>
     <sym>Anchor</sym>
 </wpt>
@@ -72,18 +72,18 @@
     <name>Bridgwater Lakes fountain</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.8205004453535" lon="-97.22422420978546">
+<wpt lat="49.820471026516344" lon="-97.22420811653139">
     <ele>232.5</ele>
     <name>Sod hut</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.822272464672835" lon="-97.22462117671968">
-    <ele>231.9</ele>
+<wpt lat="49.82281495956425" lon="-97.2247003018856">
+    <ele>232.4</ele>
     <name>Fort Whyte Alive tipi</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.84454176600364" lon="-97.25698471069337">
-    <ele>234.0</ele>
+<wpt lat="49.84433766577821" lon="-97.2517302632332">
+    <ele>234.6</ele>
     <name>Harte trail train</name>
     <sym>Anchor</sym>
 </wpt>
@@ -92,13 +92,13 @@
     <name>The Leaf</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.87165023750699" lon="-97.23010940551758">
-    <ele>233.8</ele>
+<wpt lat="49.872070099704864" lon="-97.23029136657715">
+    <ele>235.0</ele>
     <name>Assiniboine Park (pavillion)</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.87272007680406" lon="-97.22956180572511">
-    <ele>232.8</ele>
+<wpt lat="49.87254029677946" lon="-97.22931504249573">
+    <ele>233.7</ele>
     <name>Lyric Theatre</name>
     <sym>Anchor</sym>
 </wpt>
@@ -122,8 +122,8 @@
     <name>Brookside Cemetery</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.95094377356554" lon="-97.27636098861694">
-    <ele>238.0</ele>
+<wpt lat="49.95044672640201" lon="-97.27616786956789">
+    <ele>238.6</ele>
     <name>Pilehenge</name>
     <sym>Anchor</sym>
 </wpt>
@@ -162,8 +162,8 @@
     <name>Bunn&apos;s Creek</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.91909132694763" lon="-97.08413779735567">
-    <ele>230.5</ele>
+<wpt lat="49.91885386517219" lon="-97.08443149924278">
+    <ele>229.7</ele>
     <name>Life Journey</name>
     <sym>Anchor</sym>
 </wpt>
@@ -177,8 +177,8 @@
     <name>End of Transcona trail</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.89522877809233" lon="-97.0281332731247">
-    <ele>230.8</ele>
+<wpt lat="49.895221866711644" lon="-97.02795356512073">
+    <ele>231.0</ele>
     <name>Hi Neighbour statue</name>
     <sym>Anchor</sym>
 </wpt>
@@ -212,13 +212,13 @@
     <name>Canadian Museum For Human Rights</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.889718365634565" lon="-97.13117837905884">
+<wpt lat="49.88971318150725" lon="-97.13122129440308">
     <ele>230.8</ele>
     <name>Gandhi statue</name>
     <sym>Anchor</sym>
 </wpt>
-<wpt lat="49.88961813907427" lon="-97.13044345378877">
-    <ele>232.4</ele>
+<wpt lat="49.889436693909765" lon="-97.13023960590364">
+    <ele>232.0</ele>
     <name>Winnipeg sign</name>
     <sym>Anchor</sym>
 </wpt>

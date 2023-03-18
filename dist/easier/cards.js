@@ -7,10 +7,10 @@ const cards = [
             full_img: '/easier/img/1seineriveratperimeter.jpeg'
         },
         {
-            name: 'Bishop Grandin Boulevard',
+            name: 'Awasisak Mēskanow',
             description: 'The antlers are right beside the greenway, a little west of Ste Anne’s Rd.',
-            img: '/easier/img/2bishopgrandinboulevard.jpeg',
-            full_img: '/easier/img/2bishopgrandinboulevard.jpeg'
+            img: '/easier/img/2awasisakmeskanow.jpeg',
+            full_img: '/easier/img/2awasisakmeskanow.jpeg'
         },
         {
             name: 'Investors Group Field',

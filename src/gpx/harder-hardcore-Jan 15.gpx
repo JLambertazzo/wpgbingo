@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2" version="1.1" creator="https://onthegomap.com">
 <metadata>
-    <name>Harder hardcore with marks</name>
+    <name>final-harder-hardcore-with marks</name>
     <author>
         <name>gpx.studio</name>
         <link href="https://gpx.studio"></link>
@@ -27,7 +27,7 @@
     <name>Bear carving</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.84801479706648" lon="-97.16630458831789">
+<wpt lat="49.84806495355574" lon="-97.16633409261705">
     <ele>229.3</ele>
     <name>Tea kettle</name>
     <sym>Flag, Blue</sym>
@@ -37,8 +37,8 @@
     <name>Row Row Row</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.80899458522069" lon="-97.14205741882324">
-    <ele>231.5</ele>
+<wpt lat="49.808987661497" lon="-97.14240074157715">
+    <ele>231.2</ele>
     <name>Investors Group Field</name>
     <sym>Flag, Blue</sym>
 </wpt>
@@ -52,13 +52,13 @@
     <name>Bridgwater Lakes fountain</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.820459778132694" lon="-97.22426846623422">
-    <ele>232.4</ele>
+<wpt lat="49.820465834955" lon="-97.22420811653139">
+    <ele>232.5</ele>
     <name>Sod hut</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.84458327780843" lon="-97.25700616836549">
-    <ele>234.0</ele>
+<wpt lat="49.84432728777762" lon="-97.2517302632332">
+    <ele>234.6</ele>
     <name>Harte Trail train</name>
     <sym>Flag, Blue</sym>
 </wpt>
@@ -72,13 +72,13 @@
     <name>Dr. Jose Rizal</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.928143361157645" lon="-97.14005112648012">
+<wpt lat="49.92799141429032" lon="-97.14012622833253">
     <ele>232.9</ele>
     <name>Fort Garry Artillery</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.930173877866395" lon="-97.11646914482118">
-    <ele>230.7</ele>
+<wpt lat="49.93009790769321" lon="-97.11671590805055">
+    <ele>231.0</ele>
     <name>Seven Oaks House</name>
     <sym>Flag, Blue</sym>
 </wpt>
@@ -92,8 +92,8 @@
     <name>Bunn&apos;s Creek</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.9190118853202" lon="-97.08422899246217">
-    <ele>230.1</ele>
+<wpt lat="49.91898598041339" lon="-97.0842517912388">
+    <ele>229.9</ele>
     <name>Life Journey</name>
     <sym>Flag, Blue</sym>
 </wpt>
@@ -102,23 +102,23 @@
     <name>Hi Neighbour statue</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.90899428356609" lon="-97.11961269378664">
+<wpt lat="49.90879218294549" lon="-97.11987555027008">
     <ele>223.0</ele>
     <name>Disraeli pedestrian bridge</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.89565382610291" lon="-97.11312711238863">
+<wpt lat="49.89564964730847" lon="-97.1131166888981">
     <ele>228.4</ele>
     <name>Voyageur bridge</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.88973046192952" lon="-97.13117301464082">
-    <ele>230.7</ele>
+<wpt lat="49.88971404552851" lon="-97.1312226355076">
+    <ele>230.8</ele>
     <name>Gandhi statue</name>
     <sym>Flag, Blue</sym>
 </wpt>
-<wpt lat="49.88955765742855" lon="-97.13026106357576">
-    <ele>232.3</ele>
+<wpt lat="49.88953000865098" lon="-97.13020741939546">
+    <ele>232.2</ele>
     <name>Winnipeg sign</name>
     <sym>Flag, Blue</sym>
 </wpt>
