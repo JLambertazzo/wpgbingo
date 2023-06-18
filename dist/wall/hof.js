@@ -1,4 +1,11 @@
-const harderHallOfFame = []
+const harderHallOfFame = [
+  {
+    name: "Steve Lambert and Charles Burchill",
+    date: "2023-06-11",
+    img: "/wall/img/stevelambertandcharlesburchill.jpg",
+    map: "https://strava.app.link/W4WIh9OMxAb"
+  }
+]
 
 const easierHallOfFame = [
   {
