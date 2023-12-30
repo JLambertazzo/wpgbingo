@@ -11,3 +11,10 @@ const showHardcoreHarder = () => Swal.fire({
     title: 'Harder Hardcore Challenge',
     confirmButtonText: 'Close'
 })
+
+const showHardcoreHistory = () => Swal.fire({
+    imageUrl: '/img/hardcore-history.jpg',
+    imageAlt: 'History Tour Hardcore Challenge map with all stars outlined',
+    title: 'History Tour Hardcore Challenge',
+    confirmButtonText: 'Close'
+})
