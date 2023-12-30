@@ -63,8 +63,8 @@ const cards = [
     {
       name: "Stopping the Survey",
       description: "Riel and his men confronted uninvited surveyors.",
-      img: "/history/img/10-survey.JPG",
-      full_img: "/history/img/10-survey.JPG",
+      img: "/history/img/10-survey.jpg",
+      full_img: "/history/img/10-survey.jpg",
     },
   ],
   [
@@ -78,8 +78,8 @@ const cards = [
     {
       name: "Upper Fort Garry",
       description: "The fort where the path to provincehood was laid.",
-      img: "/history/img/12-ufg.JPG",
-      full_img: "/history/img/12-ufg.JPG",
+      img: "/history/img/12-ufg.jpg",
+      full_img: "/history/img/12-ufg.jpg",
     },
     {
       name: "Early Skyscrapers",
@@ -164,8 +164,8 @@ const cards = [
       name: "Assiniboia School",
       description:
         "The site of a former residential school, with a monument to the children.",
-      img: "/history/img/25-res-school.JPG",
-      full_img: "/history/img/25-res-school.JPG",
+      img: "/history/img/25-boia-school.jpg",
+      full_img: "/history/img/25-boia-school.jpg",
     },
   ],
   [
@@ -184,11 +184,11 @@ const cards = [
       full_img: "/history/img/27-amazon-paddle.JPG",
     },
     {
-      name: "Chief Peguis/Tommy Price",
+      name: "Chief Peguis/Tommy Prince",
       description:
         "Statues of two great First Nation men, Chief Peguis and Tommy Prince.",
-      img: "/history/img/28-peguis-price.JPG",
-      full_img: "/history/img/28-peguis-price.JPG",
+      img: "/history/img/28-peguis-prince.jpg",
+      full_img: "/history/img/28-peguis-prince.jpg",
     },
     {
       name: "Battle of Seven Oaks",
