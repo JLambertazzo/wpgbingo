@@ -11,7 +11,7 @@ const routes = [
     {ids: [4,9,14,19,24], url: 'https://bit.ly/history-c4'},
     {ids: [5,10,15,20,25], url: 'https://bit.ly/history-c5'},
     {ids: [7,12,8,18,13], url: 'https://bit.ly/history-central-loop'},
-    {ids: [8,16,21,26,28,27], url: 'https://bit.ly/history-east-loop'},
+    {ids: [8,16,21,26,27], url: 'https://bit.ly/history-east-loop'},
     {ids: [1,6,11,17,22,8], url: 'https://bit.ly/history-southeast-loop'},
     {ids: [14,9,15,25], url: 'https://bit.ly/history-west-loop'},
     {ids: [28,29,23,8,16,27], url: 'https://bit.ly/history-north-loop'}
