@@ -1,7 +1,7 @@
 const routes = [
     {ids: [1,2,3,4,5], url: 'https://bit.ly/history-r1'},
     {ids: [6,7,8,9,10], url: 'https://bit.ly/history-r2'},
-    {ids: [11,12,13,14,15], url: 'https://bit.ly/history-r3'},
+    {ids: [11,12,13,14,15], url: 'https://bit.ly/history-r3-fix'},
     {ids: [16,17,18,19,20], url: 'https://bit.ly/history-r4'},
     {ids: [21,22,23,24,25], url: 'https://bit.ly/history-r5'},
     {ids: [26,27,28,29,30], url: 'https://bit.ly/history-r6'},
