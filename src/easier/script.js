@@ -28,11 +28,12 @@ const getRandomBingoIds = () => routes[Math.floor(Math.random() * routes.length)
 const clearSelectedCards = () =>
   document.querySelectorAll('.bingo-card').forEach((card) => card.classList.remove('bingo-selected-card'))
 
-const applySelectedRoute = ({ids, url}) => {
+const applySelectedRoute = ({ids, url, dist}) => {
   ids.forEach((id) => {
       document.querySelector(`#card-${id}`).classList.add('bingo-selected-card')
   })
   document.querySelector('#map-button').onclick = () => window.open(url, '_blank')
+  document.querySelector('#distance-txt').innerText = dist
 }
 
 const enableMapButton = () => {
