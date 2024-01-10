@@ -928,6 +928,11 @@ video {
   line-height: 2rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -958,6 +963,10 @@ video {
 
 .font-light{
   font-weight: 300;
+}
+
+.font-extralight{
+  font-weight: 200;
 }
 
 .tracking-tighter{
@@ -1106,8 +1115,17 @@ video {
     line-height: 2rem;
   }
 
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .sm\:font-bold{
     font-weight: 700;
+  }
+
+  .sm\:font-light{
+    font-weight: 300;
   }
 }
 
