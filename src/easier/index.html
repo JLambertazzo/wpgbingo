@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="/style.css">
     <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="/js/el.js"></script>
+    <script defer src="/js/utils.js"></script>
     <script defer src="/easier/cards.js"></script>
     <script defer src="/easier/routes.js"></script>
     <script defer src="/easier/script.js"></script>
@@ -45,17 +46,22 @@
 <body class="bg-gray-50">
     <main class="mx-auto w-fit h-fit shadow-lg m-4 p-2 rounded-lg bg-gray-100">
     <div class="flex justify-start">
-          <button onclick="selectRandomBingo()"   class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-blue-700 text-gray-100 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">Generate Bingo</button>
           <button onclick="selectHardcoreBingo()" class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">Hardcore Challenge</button>
+          <button onclick="selectLoop('north')" class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">N</button>
+          <button onclick="selectLoop('west')" class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">W</button>
+          <button onclick="selectLoop('south')" class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">S</button>
+          <button onclick="selectLoop('east')" class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1">E</button>
           <a href="/"                             class="text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1 ml-auto">Home</a>
         </div>
-        <table id="bingo-container" class="my-2 rounded-md p-2 w-fit mx-auto">
+        <table id="bingo-container" class="my-2 rounded-md p-2 w-fit mx-auto mb-2">
             <tr>
-                <th class="text-2xl text-gray-700 font-semibold">B</th>
-                <th class="text-2xl text-gray-700 font-semibold">I</th>
-                <th class="text-2xl text-gray-700 font-semibold">N</th>
-                <th class="text-2xl text-gray-700 font-semibold">G</th>
-                <th class="text-2xl text-gray-700 font-semibold">O</th>
+                <th class="text-2xl text-gray-700 font-semibold"><button onclick="selectDiag(true)" class="px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px">🡾</button></th>
+                <th class="text-2xl text-gray-700 font-semibold"><button onclick="selectCol(1)" class="px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px">B</button></th>
+                <th class="text-2xl text-gray-700 font-semibold"><button onclick="selectCol(2)" class="px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px">I</button></th>
+                <th class="text-2xl text-gray-700 font-semibold"><button onclick="selectCol(3)" class="px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px">N</button></th>
+                <th class="text-2xl text-gray-700 font-semibold"><button onclick="selectCol(4)" class="px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px">G</button></th>
+                <th class="text-2xl text-gray-700 font-semibold"><button onclick="selectCol(5)" class="px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px">O</button></th>
+                <th class="text-2xl text-gray-700 font-semibold"><button onclick="selectDiag(false)" class="px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px">🡿</button></th>
             </tr>
         </table>
     </main>
