@@ -518,6 +518,7 @@ video {
 .bingo-card{
   aspect-ratio: 1 / 1;
   border-width: 2px;
+  border-left-width: 0px;
   border-bottom-width: 0px;
   border-style: dashed;
   --tw-border-opacity: 1;
@@ -527,10 +528,6 @@ video {
   padding: 0.25rem;
   text-align: center;
   vertical-align: top;
-}
-
-.bingo-card:first-child{
-  border-left-width: 0px;
 }
 
 .bingo-card:last-child{

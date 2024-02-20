@@ -92,31 +92,35 @@ const selectCol = (i) => {
   clearSelectedCards();
   const targetIds = new Array(5).fill(i).map((el, index) => el + index * 5);
   applySelectedRoute(findByRoute(targetIds));
+  enableMapButton();
 };
 
 const selectRow = (i) => {
   clearSelectedCards();
   const targetIds = new Array(5).fill(i * 5 - 4).map((el, index) => el + index);
   applySelectedRoute(findByRoute(targetIds));
+  enableMapButton();
 };
 
 const selectDiag = (topLeft) => {
   clearSelectedCards();
   const targetIds = topLeft ? [1, 7, 13, 19, 25] : [5, 9, 13, 17, 21];
   applySelectedRoute(findByRoute(targetIds));
+  enableMapButton();
 };
 
 const selectLoop = (loop) => {
   const targetIds =
-    loop === "north"
+    loop === "south"
       ? [1, 2, 3, 6, 8, 11, 12, 13]
-      : loop === "west"
+      : loop === "east"
       ? [11, 12, 13, 16, 18, 21, 22, 23]
-      : loop === "south"
+      : loop === "north"
       ? [12, 13, 17, 18, 19, 22, 23, 24]
       : [3, 4, 5, 8, 10, 13, 14, 15];
   clearSelectedCards();
   applySelectedRoute(findByRoute(targetIds));
+  enableMapButton();
 };
 
 const selectHardcoreBingo = () => {
