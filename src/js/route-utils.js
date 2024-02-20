@@ -1,3 +1,12 @@
+// Utilities specific to a bingo page
+// **WARNING**:
+// -> MUST import some routes.js file specifying a "routes" variable
+// -> MUST import routes.js BEFORE importing this file
+
+/*
+ * LOADING BINGOS AND IMAGES
+ * This code block runs on page load
+ */
 const toCardElement = (card, index) => {
   return el(
     "td",
@@ -24,9 +33,9 @@ const getSelectArrow = (row) =>
       {},
       el(
         "button",
-        "px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px text-sm",
-        { onclick: `selectRow(${row})` },
-        t("➔")
+        "px-2 pt-1 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px text-sm",
+        { onclick: `selectRow("${row}")` },
+        el("i", "material-icons", {}, t("east"))
       )
     )
   );
@@ -46,26 +55,27 @@ const appendRow = (selector) => (row) => {
   document.querySelector(selector).appendChild(row);
 };
 
-const tap = (tapFunction) => (value) => {
-  tapFunction(value);
-  return value;
-};
-
 document.addEventListener("DOMContentLoaded", () => {
   cards.map(toCardRow).forEach(appendRow("#bingo-container"));
   [...document.querySelectorAll(".card-img")].forEach((el) =>
     el.addEventListener("click", imgPopup(el.src))
   );
 });
+// ======= END OF LOADING CODE =======
 
-const getRandomBingoIds = () =>
-  routes[Math.floor(Math.random() * routes.length)];
-
+/**
+ * Deselects any currently selected bingo route
+ * @returns
+ */
 const clearSelectedCards = () =>
   document
     .querySelectorAll(".bingo-card")
     .forEach((card) => card.classList.remove("bingo-selected-card"));
 
+/**
+ * Apply a selected route to the page
+ * @param {Route} route
+ */
 const applySelectedRoute = ({ ids, url, dist }) => {
   ids.forEach((id) => {
     document.querySelector(`#card-${id}`).classList.add("bingo-selected-card");
@@ -75,53 +85,24 @@ const applySelectedRoute = ({ ids, url, dist }) => {
   document.querySelector("#distance-txt").innerText = dist;
 };
 
+/**
+ * Enables "Map It!" button on bingo pages
+ */
 const enableMapButton = () => {
   document.querySelector("#map-button").disabled = false;
 };
 
-const selectRandomBingo = () => {
+const findAndApply = (src) => (name) => {
   clearSelectedCards();
-  applySelectedRoute(getRandomBingoIds());
+  const found = src.find((el) => el.name === name);
+  applySelectedRoute(found);
   enableMapButton();
 };
 
-const findByRoute = (targetIds) =>
-  routes.find((route) => arrayEquals(route.ids, targetIds));
-
-const selectCol = (i) => {
-  clearSelectedCards();
-  const targetIds = new Array(5).fill(i).map((el, index) => el + index * 5);
-  applySelectedRoute(findByRoute(targetIds));
-  enableMapButton();
-};
-
-const selectRow = (i) => {
-  clearSelectedCards();
-  const targetIds = new Array(5).fill(i * 5 - 4).map((el, index) => el + index);
-  applySelectedRoute(findByRoute(targetIds));
-  enableMapButton();
-};
-
-const selectDiag = (topLeft) => {
-  clearSelectedCards();
-  const targetIds = topLeft ? [1, 7, 13, 19, 25] : [5, 9, 13, 17, 21];
-  applySelectedRoute(findByRoute(targetIds));
-  enableMapButton();
-};
-
-const selectLoop = (loop) => {
-  const targetIds =
-    loop === "south"
-      ? [1, 2, 3, 6, 8, 11, 12, 13]
-      : loop === "east"
-      ? [11, 12, 13, 16, 18, 21, 22, 23]
-      : loop === "north"
-      ? [12, 13, 17, 18, 19, 22, 23, 24]
-      : [3, 4, 5, 8, 10, 13, 14, 15];
-  clearSelectedCards();
-  applySelectedRoute(findByRoute(targetIds));
-  enableMapButton();
-};
+const selectCol = findAndApply(columns);
+const selectRow = findAndApply(rows);
+const selectDiag = findAndApply(diagonals);
+const selectLoop = findAndApply(loops);
 
 const selectHardcoreBingo = () => {
   clearSelectedCards();
@@ -130,7 +111,6 @@ const selectHardcoreBingo = () => {
 };
 
 const imgPopup = (src) => () => {
-  console.log("sou haida", src);
   const card = cards.flat().find((card) => src.endsWith(card.img));
   Swal.fire({
     imageUrl: card.full_img,
