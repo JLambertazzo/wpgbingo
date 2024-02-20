@@ -26,7 +26,23 @@
         @apply border-green-100;
     }
 
+    .bingo-header {
+        @apply text-2xl text-gray-700 font-semibold
+    }
+
     .card-width {
         width: 150px;
+    }
+
+    .drop-btn {
+        @apply px-2 pt-1 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px text-sm
+    }
+
+    .map-it-btn {
+        @apply absolute right-8 bottom-8 w-16 h-16 sm:w-24 sm:h-24 bg-blue-700 active:bg-blue-800 shadow-xl hover:shadow-lg active:shadow-sm text-gray-100 rounded-full text-base font-light sm:text-2xl sm:font-bold disabled:bg-gray-400 disabled:text-gray-600 disabled:opacity-40 disabled:border-dashed border-none border-gray-600 border-2 tracking-tighter
+    }
+
+    .nav-btn {
+        @apply text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1
     }
 }
