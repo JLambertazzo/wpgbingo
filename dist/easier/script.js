@@ -24,7 +24,7 @@ const getSelectArrow = (row) =>
       {},
       el(
         "button",
-        "px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px",
+        "px-2 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px text-sm",
         { onclick: `selectRow(${row})` },
         t("➔")
       )
