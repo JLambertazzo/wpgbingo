@@ -23,12 +23,6 @@ const loops = [
     url: "https://bit.ly/wpg-bingo-south-loop",
     dist: "32.4 km",
   },
-  {
-    name: "central",
-    ids: [3, 5],
-    url: "https://bit.ly/wpg-bingo-fountain-uni-loop",
-    dist: "21.26 km",
-  },
 ];
 
 const rows = [
