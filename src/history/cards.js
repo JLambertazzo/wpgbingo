@@ -3,33 +3,34 @@ const cards = [
     {
       name: "Bittersweet Way",
       description:
-        "Bittersweet Way, along Awasisak Mēskanow, details the history of this part of St. Vital.",
+        "The development of St. Vital is explained. Abinojii Mikanah at St. Mary’s Rd.",
       img: "/history/img/1-bittersweet.JPG",
       full_img: "/history/img/1-bittersweet.JPG",
     },
     {
       name: "La Barriere",
       description:
-        "The La Barriere monument, on the Pembina highway, tells of Metis resistance.",
+        "A monument tells of Metis resistance. Pembina Highway, south of De L’Eglise Ave.",
       img: "/history/img/2-la-barriere.JPG",
       full_img: "/history/img/2-la-barriere.JPG",
     },
     {
       name: "St. Norbert Historical Park",
-      description: "A heritage park showing the history of St. Norbert.",
+      description:
+        "A park showing the history of St. Norbert. Off Pembina Highway on Turnbull Dr.",
       img: "/history/img/3-stn-hist-park.JPG",
       full_img: "/history/img/3-stn-hist-park.JPG",
     },
     {
       name: "Floodway",
       description:
-        "A flood-prevention megaproject at Duff Roblin provincial park.",
+        "A flood-prevention megaproject at Duff Robin provincial park, off Courchaine Rd.",
       img: "/history/img/4-floodway.JPG",
       full_img: "/history/img/4-floodway.JPG",
     },
     {
       name: "Monastery",
-      description: "The ruins of a monastery along the La Salle river.",
+      description: "The ruins of a monastery off Rue des Trappistes.",
       img: "/history/img/5-monastery.JPG",
       full_img: "/history/img/5-monastery.JPG",
     },
@@ -38,7 +39,7 @@ const cards = [
     {
       name: "Louis Riel Sr. Mill",
       description:
-        "Louis Riel’s father operated a mill here on the Seine river.",
+        "Louis Riel’s father operated a mill here on the Seine river, north of John Bruce Rd.",
       img: "/history/img/6-riel-mill.JPG",
       full_img: "/history/img/6-riel-mill.JPG",
     },
@@ -50,19 +51,22 @@ const cards = [
     },
     {
       name: "The Forks",
-      description: "The Forks is where it all began for what is now Winnipeg.",
+      description:
+        "Signage on the Red River side of The Forks explains Winnipeg’s roots.",
       img: "/history/img/8-forks.JPG",
       full_img: "/history/img/8-forks.JPG",
     },
     {
       name: "Grant's Old Mill",
-      description: "A recreation of a mill operated by Cuthbert Grant.",
+      description:
+        "A recreation of a mill operated by Cuthbert Grant, along the Sturgeon Creek trail.",
       img: "/history/img/9-grants.JPG",
       full_img: "/history/img/9-grants.JPG",
     },
     {
       name: "Stopping the Survey",
-      description: "Riel and his men confronted uninvited surveyors.",
+      description:
+        "Riel and his men confronted uninvited surveyors here, off Cloverwood Rd.",
       img: "/history/img/10-survey.jpg",
       full_img: "/history/img/10-survey.jpg",
     },
@@ -77,25 +81,29 @@ const cards = [
     },
     {
       name: "Upper Fort Garry",
-      description: "The fort where the path to provincehood was laid.",
+      description:
+        "The fort where the path to provincehood was laid. Main St. near Broadway.",
       img: "/history/img/12-ufg.jpg",
       full_img: "/history/img/12-ufg.jpg",
     },
     {
       name: "Early Skyscrapers",
-      description: "A tribute to boom times and historic architecture.",
+      description:
+        "A monument to boom times and historic architecture, Main St. near McDermott",
       img: "/history/img/13-skyscrapers.JPG",
       full_img: "/history/img/13-skyscrapers.JPG",
     },
     {
       name: "Air Force Way",
-      description: "Historic military planes lie along Air Force Way.",
+      description:
+        "Historic military planes lie along Air Force Way, off the Yellow Ribbon trail.",
       img: "/history/img/14-air-force.jpg",
       full_img: "/history/img/14-air-force.jpg",
     },
     {
       name: "Pacific Junction",
-      description: "A small train station lay here.",
+      description:
+        "A small train station lay here, along the Harte trail near Elmhurst Rd.",
       img: "/history/img/15-pacific-junction.JPG",
       full_img: "/history/img/15-pacific-junction.JPG",
     },
@@ -104,7 +112,7 @@ const cards = [
     {
       name: "Shoal Lake Aqueduct",
       description:
-        "A tribute to the faraway source of Winnipeg’s drinking water.",
+        "A tribute to the source of Winnipeg’s drinking water. On the Seine river north of Provencher.",
       img: "/history/img/16-shoal.JPG",
       full_img: "/history/img/16-shoal.JPG",
     },
@@ -116,19 +124,22 @@ const cards = [
     },
     {
       name: "Bloody Saturday",
-      description: "A monument to the general strike of 1919.",
+      description:
+        "A monument to the general strike of 1919. Main St. at Market Ave.",
       img: "/history/img/18-bloody-sat.JPG",
       full_img: "/history/img/18-bloody-sat.JPG",
     },
     {
       name: "McClung Park",
-      description: "A small park named after a fighter for equality.",
+      description:
+        "A small park named after a fighter for equality. Wolseley Ave. near Lenore. St.",
       img: "/history/img/19-mcclung.JPG",
       full_img: "/history/img/19-mcclung.JPG",
     },
     {
       name: "Citizen's Hall of Fame",
-      description: "Busts of famous Winnipeg residents sit along the path.",
+      description:
+        "Busts of renowned people line the path in the southeast corner of Assiniboine Park.",
       img: "/history/img/20-chof.JPG",
       full_img: "/history/img/20-chof.JPG",
     },
@@ -136,34 +147,35 @@ const cards = [
   [
     {
       name: "CNR 2747",
-      description: "The first steam locomotive built in western Canada.",
+      description:
+        "The first steam locomotive built in western Canada. Transcona trail near Plessis Rd.",
       img: "/history/img/21-cn2747.JPG",
       full_img: "/history/img/21-cn2747.JPG",
     },
     {
       name: "Elzear Goulet Park",
-      description:
-        "A memorial to a Metis leader killed while trying to escape across the river.",
+      description: "A memorial to a Metis leader. Tache Ave. near Aubert Rd.",
       img: "/history/img/22-elzear.JPG",
       full_img: "/history/img/22-elzear.JPG",
     },
     {
       name: "Ross House",
-      description: "The first post office in western Canada.",
+      description:
+        "The first post office in western Canada. Meade St. N near Euclid Ave.",
       img: "/history/img/23-ross-house.JPG",
       full_img: "/history/img/23-ross-house.JPG",
     },
     {
       name: "Ukrainian Labour Temple",
       description:
-        "A hub for Ukrainian social and cultural activities, and for the labour movement.",
+        "A hub for Ukrainian culture and the labour movement. McGregor St. at Pritchard Ave.",
       img: "/history/img/24-ukr-temple.JPG",
       full_img: "/history/img/24-ukr-temple.JPG",
     },
     {
       name: "Assiniboia School",
       description:
-        "The site of a former residential school, with a monument to the children.",
+        "The site of a former residential school. Academy Rd, east of Route 90.",
       img: "/history/img/25-boia-school.jpg",
       full_img: "/history/img/25-boia-school.jpg",
     },
@@ -172,34 +184,35 @@ const cards = [
     {
       name: "Transcona Cordite Plant",
       description:
-        "A former munitions plant and, briefly, a Japanese internment camp.",
+        "A former munitions plant and Japanese internment camp. Transcona trail near Redonda St.",
       img: "/history/img/26-tcona-plant.JPG",
       full_img: "/history/img/26-tcona-plant.JPG",
     },
     {
       name: "Paddle to the Amazon",
       description:
-        "The Starkells paddled a dangerous 12,000 miles to Brazil, starting here.",
+        "The Starkells paddled 12,000 miles to Brazil from here. Kildonan Dr. near Bronx Pl.",
       img: "/history/img/27-amazon-paddle.JPG",
       full_img: "/history/img/27-amazon-paddle.JPG",
     },
     {
       name: "Chief Peguis/Tommy Prince",
       description:
-        "Statues of two great First Nation men, Chief Peguis and Tommy Prince.",
+        "Statues of Chief Peguis and Tommy Prince. Kildonan Park next to Prairie’s Edge restaurant.",
       img: "/history/img/28-peguis-prince.jpg",
       full_img: "/history/img/28-peguis-prince.jpg",
     },
     {
       name: "Battle of Seven Oaks",
-      description: "Site of a bloody fur-trade era battle.",
+      description:
+        "Site of a bloody fur-trade era battle. Main St. at Rupertsland Blvd.",
       img: "/history/img/29-battle-7oaks.JPG",
       full_img: "/history/img/29-battle-7oaks.JPG",
     },
     {
       name: "Valour Road Plaza",
       description:
-        "Three men, from this one street, were awarded the Victoria Cross.",
+        "Three men from this street were awarded the Victoria Cross. Valour Rd. at Sargent Ave.",
       img: "/history/img/30-valour-rd.JPG",
       full_img: "/history/img/30-valour-rd.JPG",
     },
