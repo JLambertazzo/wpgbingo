@@ -24,7 +24,7 @@ const cards = [
     {
       name: "Floodway",
       description:
-        "A flood-prevention megaproject at Duff Robin provincial park, off Courchaine Rd.",
+        "A flood-prevention megaproject at Duff Roblin provincial park, off Courchaine Rd.",
       img: "/history/img/4-floodway.JPG",
       full_img: "/history/img/4-floodway.JPG",
     },
