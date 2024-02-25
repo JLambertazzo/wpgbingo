@@ -7,18 +7,32 @@
  * LOADING BINGOS AND IMAGES
  * This code block runs on page load
  */
-const toCardElement = (card, index) => {
+const toCardImageWithOverlay = (card) => {
   return el(
-    "td",
-    "bingo-card",
-    { id: `card-${index}` },
-    el("img", "card-img", {
+    "div",
+    "relative",
+    {},
+    el("img", "card-img block mx-auto", {
       src: card.img,
       alt: card.name,
       width: 125,
       height: 125,
     }),
-    el("h2", "w-fit text-gray-600 text-left", {}, t(card.name))
+    el(
+      "div",
+      "bingo-overlay",
+      { src: card.img },
+      el("h2", "w-fit text-gray-50 mb-0 mx-auto", {}, t(card.name))
+    )
+  );
+};
+
+const toCardElement = (card, index) => {
+  return el(
+    "td",
+    "bingo-card",
+    { id: `card-${index}` },
+    toCardImageWithOverlay(card)
   );
 };
 
@@ -57,8 +71,8 @@ const appendRow = (selector) => (row) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   cards.map(toCardRow).forEach(appendRow("#bingo-container"));
-  [...document.querySelectorAll(".card-img")].forEach((el) =>
-    el.addEventListener("click", imgPopup(el.src))
+  [...document.querySelectorAll(".bingo-overlay")].forEach((el) =>
+    el.addEventListener("click", imgPopup(el.getAttribute("src")))
   );
 });
 // ======= END OF LOADING CODE =======

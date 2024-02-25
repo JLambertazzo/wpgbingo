@@ -601,6 +601,36 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.bingo-overlay{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 0.5rem;
+  text-align: center;
+  opacity: 0;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.bingo-overlay:hover{
+  background-color: rgb(0 0 0 / 0.6);
+  opacity: 1;
+}
+
+.bingo-overlay {
+  width: 117px;
+  height: 117px;
+}
+
 .card-width {
   width: 150px;
 }
@@ -726,6 +756,10 @@ video {
   }
 }
 
+.relative{
+  position: relative;
+}
+
 .sticky{
   position: sticky;
 }
@@ -795,6 +829,10 @@ video {
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-0{
+  margin-bottom: 0px;
 }
 
 .mb-1{
@@ -1100,9 +1138,9 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-gray-600{
+.text-gray-50{
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .text-gray-500{
