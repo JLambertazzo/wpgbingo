@@ -35,7 +35,7 @@ const getSelectArrow = (row) =>
         "button",
         "drop-btn",
         { onclick: `selectRow("${row}")` },
-        el("i", "material-icons", {}, t("east"))
+        el("i", "material-icons", {}, t("chevron_right"))
       )
     )
   );
