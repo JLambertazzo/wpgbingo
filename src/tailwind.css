@@ -30,12 +30,18 @@
         @apply text-2xl text-gray-700 font-semibold
     }
 
+    .bingo-overlay {
+        @apply flex flex-col justify-end absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 hover:bg-black/[0.6] duration-200 ease-in text-center mx-auto my-auto rounded-lg;
+        width: 117px;
+        height: 117px;
+    }
+
     .card-width {
         width: 150px;
     }
 
     .drop-btn {
-        @apply px-2 pt-1 mb-px border-b-2 border-gray-200 bg-white hover:border-gray-100 hover:translate-y-px text-sm
+        @apply px-2 pt-1 mb-px border-b-2 border-gray-300 bg-gray-200 hover:border-gray-100 hover:translate-y-px text-sm
     }
 
     .map-it-btn {
@@ -43,6 +49,6 @@
     }
 
     .nav-btn {
-        @apply text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-100 border-red-100 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1
+        @apply text-base p-1 px-2 active:shadow-none hover:shadow-md shadow-lg bg-gray-200 border-gray-300 border-2 text-gray-700 font-semibold lg:text-lg lg:p-2 lg:px-4 rounded-lg m-1
     }
 }
