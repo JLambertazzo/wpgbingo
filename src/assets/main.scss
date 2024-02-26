@@ -55,17 +55,11 @@
       sans-serif;
 
     font-feature-settings:
-      'dlig',
-      // discretionary ligatures
-      'ss01',
-      // open digits
-      'cv06',
-      // simplified "u"
-      'cv12',
-      // compact "f"
-      'cv13',
-      // compact "t",
-      'liga' 1,
+      'ss01',   /* open digits */
+      'cv06',   /* simplified "u" */
+      'cv12',   /* compact "f" */
+      'cv13',   /* compact "t" */
+      'liga' 1, /* fix for Chrome */
       'calt' 1; /* fix for Chrome */
   }
 }
