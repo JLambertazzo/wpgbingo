@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/images-sm/*"
+  to = "/.netlify/images?url=/images/:splat&w=240&h=240&fit=cover"
+  status = 200
+
+[[redirects]]
+  from = "/images-md/*"
+  to = "/.netlify/images?url=/images/:splat&w=960&h=720&fit=cover"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

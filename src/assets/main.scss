@@ -1,0 +1,212 @@
+@use './variables.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: var(--weight-normal);
+}
+
+:root {
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-feature-settings:
+    'dlig',
+    'ss03',
+    'cv06',
+    'cv12',
+    'cv13',
+    'calt' 1,
+    'liga' 1,
+    'ccmp',
+    'locl',
+    'kern';
+
+  font-feature-settings:
+    'liga' 1,
+    'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family:
+      'Inter InterVariable',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      sans-serif;
+
+    font-feature-settings:
+      'dlig',
+      // discretionary ligatures
+      'ss01',
+      // open digits
+      'cv06',
+      // simplified "u"
+      'cv12',
+      // compact "f"
+      'cv13',
+      // compact "t",
+      'liga' 1,
+      'calt' 1; /* fix for Chrome */
+  }
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 25px;
+  font-weight: var(--weight-normal);
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+// @TODO mixins or more utility classes here to reduce duplication?
+
+.btn {
+  --btn-bg: var(--gray-lighter);
+  --btn-txt: var(--gray-darker);
+  --btn-bg-hover: var(--gray-light);
+  --btn-text-hover: var(--gray-lightest);
+
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  background-color: var(--btn-bg);
+  color: var(--btn-txt);
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+
+  transition: var(--link-transition);
+
+  &:hover {
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-txt-hover);
+  }
+}
+
+.btn.btn-wide {
+  width: 100%;
+  text-align: center;
+}
+
+.btn.btn-primary {
+  --btn-bg-hover: var(--primary);
+  --btn-txt-hover: var(--primary-lightest);
+}
+
+.btn.btn-sm {
+  --btn-bg: var(--primary-lightest);
+  --btn-txt: var(--primary-light);
+  --btn-bg-hover: var(--primary-lighter);
+  --btn-text-hover: var(--primary);
+  padding: 0.125rem 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  & + & {
+    margin-left: 0.5rem;
+  }
+}
+
+.link-header {
+  text-decoration: none;
+  color: var(--gray);
+  border-bottom: 2px solid transparent;
+  transition: var(--link-transition);
+
+  &:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary-lighter);
+  }
+}
+
+strong {
+  font-weight: var(--weight-bold);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--weight-bold);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+p,
+ul,
+ol {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  border-bottom: 2px solid transparent;
+  transition: var(--link-transition);
+  font-weight: var(--weight-semibold);
+  &:hover {
+    border-color: var(--primary-lighter);
+  }
+}
+
+img {
+  background-color: var(--gray-light);
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDEwMCAxMDAiPjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjM1IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsLjI1KSIgc3Ryb2tlLWRhc2hhcnJheT0iMTgwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMTAiPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgZHVyPSIxLjVzIiBrZXlUaW1lcz0iMDsxIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgdHlwZT0icm90YXRlIiB2YWx1ZXM9IjAgNTAgNTA7MzYwIDUwIDUwIi8+PC9jaXJjbGU+PC9zdmc+');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
