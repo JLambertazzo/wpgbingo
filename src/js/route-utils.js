@@ -21,7 +21,7 @@ const toCardImageWithOverlay = (card) => {
     el(
       "div",
       "bingo-overlay",
-      { src: card.img },
+      {},
       el("h2", "w-fit text-gray-50 mb-0 mx-auto", {}, t(card.name))
     )
   );
@@ -31,7 +31,7 @@ const toCardElement = (card, index) => {
   return el(
     "td",
     "bingo-card",
-    { id: `card-${index}` },
+    { id: `card-${index}`, img: card.img },
     toCardImageWithOverlay(card)
   );
 };
@@ -71,8 +71,8 @@ const appendRow = (selector) => (row) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   cards.map(toCardRow).forEach(appendRow("#bingo-container"));
-  [...document.querySelectorAll(".bingo-overlay")].forEach((el) =>
-    el.addEventListener("click", imgPopup(el.getAttribute("src")))
+  [...document.querySelectorAll(".bingo-card")].forEach((el) =>
+    el.addEventListener("click", imgPopup(el.getAttribute("img")))
   );
 });
 // ======= END OF LOADING CODE =======
