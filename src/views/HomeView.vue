@@ -37,7 +37,14 @@ onBeforeMount(() => {
       </nav>
     </section>
     <section class="map">
-      <img src="/images/map.jpg" />
+      <img
+        src="/images/map.jpg"
+        width="636"
+        height="792"
+        alt="map of The Forks"
+        loading="eager"
+        title="map of The Forks"
+      />
     </section>
     <nav class="header">
       <RouterLink :to="{ name: 'about' }" class="link-header">About</RouterLink>

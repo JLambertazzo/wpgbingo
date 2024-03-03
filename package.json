@@ -16,7 +16,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@gtm-support/vue-gtm": "^2.2.0",
@@ -29,6 +30,7 @@
     "@tsconfig/node20": "^20.1.2",
     "@types/jsdom": "^21.1.6",
     "@types/node": "^20.11.10",
+    "@unhead/addons": "^1.8.10",
     "@vitejs/plugin-vue": "^5.0.3",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/eslint-config-prettier": "^8.0.0",
@@ -41,6 +43,7 @@
     "netlify-cli": "^17.17.0",
     "npm-run-all2": "^6.1.1",
     "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
     "sass": "^1.71.1",
     "typescript": "~5.3.0",
     "vite": "^5.0.11",

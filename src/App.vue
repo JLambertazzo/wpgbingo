@@ -1,12 +1,32 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router';
+import { RouterView, useRoute, useRouter } from 'vue-router';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 
-import { useHead } from '@unhead/vue';
+import { useHead, useSeoMeta } from '@unhead/vue';
+import router from './router';
+
+const canonical = router.resolve(router.currentRoute.value).href;
 
 useHead({
   titleTemplate: (title?: string) =>
     !title ? 'Winnipeg Bicycle Bingo' : `${title} - Winnipeg Bicycle Bingo`,
+  meta: [
+    {
+      name: 'description',
+      content: 'A bingo game that encourages people to discover different areas of Winnipeg on bicycle.',
+    },
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: canonical
+    },
+  ],
+});
+useSeoMeta({
+  ogUrl: canonical,
+  ogType: 'website',
+  ogImage: '/images/map.jpg',
 });
 </script>
 

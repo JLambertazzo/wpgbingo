@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useHead } from '@unhead/vue';
+import { useHead, useSeoMeta } from '@unhead/vue';
 import type { tChallengeId } from '@/types';
 import { challenges } from '@/data/challenges';
 import ModalComponent from '@/components/ModalComponent.vue';
 import PoppedHardcoreMapComponent from '@/components/PoppedHardcoreMapComponent.vue';
 
-useHead({
+useSeoMeta({
   title: 'About',
 });
+// useHead({
+//   title: 'About',
+// });
 
 const poppedChallenge = ref(undefined as tChallengeId | undefined);
 
