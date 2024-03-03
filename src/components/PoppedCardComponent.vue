@@ -12,7 +12,7 @@ const imagePath = `/images-md/${props.challengeId}/${card.img}`;
 
 <template>
   <section>
-    <img :src="imagePath" :alt="card.name" :title="card.name" />
+    <img :src="imagePath" :alt="card.name" :title="card.name" width="960" height="720" loading="lazy" />
     <div class="details">
       <h2>{{ card.name }}</h2>
       <p>{{ card.desc }}</p>
@@ -24,6 +24,7 @@ const imagePath = `/images-md/${props.challengeId}/${card.img}`;
 img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 4/3;
 }
 

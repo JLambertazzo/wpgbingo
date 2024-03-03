@@ -10,7 +10,14 @@ const imagePath = `/images-md/${props.challengeId}/hardcore-map.jpg`;
 
 <template>
   <section>
-    <img :src="imagePath" :alt="`${props.challengeId} hardcore map`" />
+    <img
+      :src="imagePath"
+      :alt="`${props.challengeId} hardcore map`"
+      :title="`${props.challengeId} hardcore map`"
+      width="960"
+      height="720"
+      loading="lazy"
+    />
   </section>
 </template>
 
@@ -18,6 +25,8 @@ const imagePath = `/images-md/${props.challengeId}/hardcore-map.jpg`;
 img {
   display: block;
   width: 100%;
+  height: auto;
   max-height: calc(100% - 5rem);
+  aspect-ratio: 4/3;
 }
 </style>

@@ -17,7 +17,8 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "regenerate-icons": "pwa-asset-generator ./src/assets/logo.svg public/images/icons --index ./index.html --background '#bada55' --manifest public/manifest.json --path-override '/images/icons' --icon-only --favicon"
   },
   "dependencies": {
     "@gtm-support/vue-gtm": "^2.2.0",
@@ -43,6 +44,7 @@
     "netlify-cli": "^17.17.0",
     "npm-run-all2": "^6.1.1",
     "prettier": "^3.0.3",
+    "pwa-asset-generator": "^6.3.1",
     "rimraf": "^5.0.5",
     "sass": "^1.71.1",
     "typescript": "~5.3.0",

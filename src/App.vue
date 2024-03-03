@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { RouterView, useRoute, useRouter } from 'vue-router';
+import { RouterView, useRouter } from 'vue-router';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 
 import { useHead, useSeoMeta } from '@unhead/vue';
-import router from './router';
+
+const router = useRouter();
 
 const canonical = router.resolve(router.currentRoute.value).href;
 
@@ -19,7 +20,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: canonical
+      href: canonical,
     },
   ],
 });

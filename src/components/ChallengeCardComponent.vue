@@ -19,7 +19,7 @@ const imageURL = `/images-sm/${props.challengeId}/${card.img}`;
 <template>
   <div :class="['grid-card', selected ? 'selected' : '']">
     <figure @click="emit('popup', card)">
-      <img :src="imageURL" :alt="card.name" :title="card.name" />
+      <img :src="imageURL" :alt="card.name" :title="card.name" width="240" height="240" loading="eager" />
       <figcaption>
         {{ card.name }}
       </figcaption>

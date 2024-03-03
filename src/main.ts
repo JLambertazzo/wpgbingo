@@ -10,11 +10,11 @@ import router from './router';
 
 const app = createApp(App);
 app.use(router);
-app.use(createHead({
-  plugins: [
-    InferSeoMetaPlugin(),
-  ]
-}));
+app.use(
+  createHead({
+    plugins: [InferSeoMetaPlugin()],
+  }),
+);
 app.use(
   createGtm({
     id: 'GTM-577DCV5D',

@@ -25,7 +25,14 @@ useHead({
         <h3>{{ challenges[ckey].name }} Challenge</h3>
         <div v-for="(wallCard, wkey) in wall" :key="wkey" class="wall-card">
           <figure>
-            <img :src="`/images-sm/wall/${wallCard.img}`" :alt="wallCard.name" />
+            <img
+              :src="`/images-sm/wall/${wallCard.img}`"
+              :alt="`picture of ${wallCard.name}`"
+              :title="`${wallCard.name} completed the ${challenges[ckey].name} Challenge on ${wallCard.date}`"
+              width="240"
+              height="240"
+              loading="eager"
+            />
             <figcaption>{{ wallCard.name }}</figcaption>
           </figure>
           <div class="details">
@@ -83,6 +90,7 @@ h3 {
   img {
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 1;
     border-radius: var(--radius-sm);
     object-fit: cover;
