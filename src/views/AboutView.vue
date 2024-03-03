@@ -6,12 +6,9 @@ import { challenges } from '@/data/challenges';
 import ModalComponent from '@/components/ModalComponent.vue';
 import PoppedHardcoreMapComponent from '@/components/PoppedHardcoreMapComponent.vue';
 
-useSeoMeta({
+useHead({
   title: 'About',
 });
-// useHead({
-//   title: 'About',
-// });
 
 const poppedChallenge = ref(undefined as tChallengeId | undefined);
 
