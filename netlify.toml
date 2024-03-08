@@ -8,7 +8,18 @@
   to = "/.netlify/images?url=/images/:splat&w=960&h=720&fit=cover"
   status = 200
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [[plugins.inputs.audits]]
+    path = ""
+  [[plugins.inputs.audits]]
+    path = "/about"
+  [[plugins.inputs.audits]]
+    path = "/wall-of-fame"
+  [[plugins.inputs.audits]]
+    path = "/go/easier"
+  [[plugins.inputs.audits]]
+    path = "/go/harder"
+  [[plugins.inputs.audits]]
+    path = "/go/history"

@@ -6,6 +6,12 @@ import { useHead } from '@unhead/vue';
 useHead({
   title: 'Wall of Fame',
 });
+
+const challengeNames = new Map(
+  challenges.map((e) => {
+    return [e.id, e.name];
+  }),
+);
 </script>
 
 <template>
@@ -22,13 +28,13 @@ useHead({
 
     <div class="wall-grid">
       <template v-for="(wall, ckey) in wallOfFame" :key="ckey">
-        <h3>{{ challenges[ckey].name }} Challenge</h3>
+        <h3>{{ challengeNames.get(ckey) }} Challenge</h3>
         <div v-for="(wallCard, wkey) in wall" :key="wkey" class="wall-card">
           <figure>
             <img
               :src="`/images-sm/wall/${wallCard.img}`"
               :alt="`picture of ${wallCard.name}`"
-              :title="`${wallCard.name} completed the ${challenges[ckey].name} Challenge on ${wallCard.date}`"
+              :title="`${wallCard.name} completed the ${challengeNames.get(ckey)} Challenge on ${wallCard.date}`"
               width="240"
               height="240"
               loading="eager"

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useHead, useSeoMeta } from '@unhead/vue';
+import { useHead } from '@unhead/vue';
 import type { tChallengeId } from '@/types';
 import { challenges } from '@/data/challenges';
 import ModalComponent from '@/components/ModalComponent.vue';
@@ -56,8 +56,8 @@ function unpopChallenge() {
     <ul>
       <li v-for="(challenge, key) in challenges" :key="key">
         {{ challenge.name }} Hardcore Challenge:
-        <a class="btn btn-sm" @click="popChallenge(key)">map</a>
-        <a class="btn btn-sm" :href="`/gpx/WPGBingo-hardcore-${key}.gpx`">gpx</a>
+        <a class="btn btn-sm" @click="popChallenge(challenge.id)">map</a>
+        <a class="btn btn-sm" :href="`/gpx/WPGBingo-hardcore-${challenge.id}.gpx`">gpx</a>
       </li>
     </ul>
     <p>

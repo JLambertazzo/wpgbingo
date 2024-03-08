@@ -28,6 +28,7 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+.vite-ssg-temp
 
 # Local Netlify folder
 .netlify

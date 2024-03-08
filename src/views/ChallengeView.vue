@@ -1,28 +1,32 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@unhead/vue';
-import { challenges } from '@/data/challenges';
-import type { tChallengeId } from '@/types';
+import type { tChallenge, tChallengeId } from '@/types';
 import ChallengeComponent from '@/components/ChallengeComponent.vue';
+import { challenges } from '@/data/challenges';
 
 const route = useRoute();
-
-// the route guard enforces we are getting valid challengeIds here
-const challengeId = route.params.id as tChallengeId;
-const challenge = challenges[challengeId];
-
-useHead({
-  title: `${challenge.name} Challenge`,
-});
+const challengeId = route.params.id;
+const challenge = challenges.find((e) => e.id === challengeId);
+if (!challenge) {
+  const router = useRouter();
+  router.replace({
+    name: 'not-found',
+    params: { pathMatch: route.path.substring(1).split('/') },
+    query: route.query,
+    hash: route.hash,
+  });
+} else {
+  useHead({
+    title: `${challenge.name} Challenge`,
+  });
+}
 </script>
 
 <template>
-  <main>
+  <main v-if="challenge">
     <h1>{{ challenge.name }} Challenge</h1>
-
-    <Suspense>
-      <ChallengeComponent :challengeId="challengeId" />
-    </Suspense>
+    <ChallengeComponent :challenge="challenge" />
   </main>
 </template>
 

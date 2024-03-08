@@ -2,11 +2,6 @@ import { cChallengeIds, cColumns, cColumnsNumeric, cNamedRoutes, cRows } from '.
 
 export type tChallengeId = (typeof cChallengeIds)[number];
 
-export type tChallenge = {
-  name: string;
-};
-export type tChallenges = Record<tChallengeId, tChallenge>;
-
 type tCardIdColumn = (typeof cColumns)[number];
 type tCardIdRow = (typeof cRows)[number];
 
@@ -39,6 +34,13 @@ export type tRoute = {
   cards: tCardId[];
   url: string;
   dist: number;
+};
+
+export type tChallenge = {
+  id: tChallengeId;
+  name: string;
+  cards: tCard[];
+  routes: tRoute[];
 };
 
 export type tWallEntry = {

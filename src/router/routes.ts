@@ -1,6 +1,8 @@
+import AboutView from '@/views/AboutView.vue';
+import ChallengeView from '@/views/ChallengeView.vue';
 import HomeView from '@/views/HomeView.vue';
 import NotFoundView from '@/views/NotFoundView.vue';
-import { challenges } from '@/data/challenges';
+import WallView from '@/views/WallView.vue';
 import type { RouteRecordRaw } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
@@ -12,31 +14,26 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/go/:id',
     name: 'challenge',
-    beforeEnter: (to) => {
-      const id = to.params.id as string;
-      if (!Object.keys(challenges).includes(id)) {
-        return {
-          name: 'not-found',
-          params: { pathMatch: to.path.substring(1).split('/') },
-          query: to.query,
-          hash: to.hash,
-        };
-      }
-    },
     // route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('@/views/ChallengeView.vue'),
+    component: ChallengeView,
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('@/views/AboutView.vue'),
+    component: AboutView,
   },
   {
     path: '/wall-of-fame',
     name: 'wall-of-fame',
-    component: () => import('@/views/WallView.vue'),
+    component: WallView,
+  },
+  // this entry builds the static 404.html page for Netlify
+  {
+    path: '/404',
+    name: 'not-found',
+    component: NotFoundView,
   },
   {
     path: '/:pathMatch(.*)*',

@@ -1,24 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 import { challenges } from '@/data/challenges';
-import ModalComponent from '@/components/ModalComponent.vue';
-import PoppedWarningComponent from '@/components/PoppedWarningComponent.vue';
-import { onBeforeMount, ref } from 'vue';
-
-// can change all this to use Pinia store if/when there are new persistent features
-const seenWarning = ref(false);
-const sessionKey = 'wpgbingo-warning';
-
-function closeWarning() {
-  sessionStorage.setItem(sessionKey, 'true');
-  seenWarning.value = true;
-}
-
-onBeforeMount(() => {
-  if (sessionStorage.getItem(sessionKey)) {
-    seenWarning.value = true;
-  }
-});
 </script>
 
 <template>
@@ -29,9 +11,9 @@ onBeforeMount(() => {
         Winnipeg Bike Bingo!
       </h1>
       <nav class="challenges">
-        <template v-for="(item, key) in challenges" :key="key">
-          <RouterLink :to="{ name: 'challenge', params: { id: key } }" class="btn btn-primary">
-            {{ item.name }}
+        <template v-for="(challenge, key) in challenges" :key="key">
+          <RouterLink :to="{ name: 'challenge', params: { id: challenge.id } }" class="btn btn-primary">
+            {{ challenge.name }}
           </RouterLink>
         </template>
       </nav>
@@ -52,9 +34,6 @@ onBeforeMount(() => {
     </nav>
   </main>
 
-  <ModalComponent v-if="!seenWarning" :closeText="'I agree'" @unpop="closeWarning">
-    <PoppedWarningComponent />
-  </ModalComponent>
 </template>
 
 <style scoped>

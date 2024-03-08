@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router';
-import HeaderComponent from '@/components/HeaderComponent.vue';
-
+import { onBeforeMount, ref } from 'vue';
+import { RouterView, useRoute } from 'vue-router';
 import { useHead, useSeoMeta } from '@unhead/vue';
+import HeaderComponent from '@/components/HeaderComponent.vue';
+import ModalComponent from '@/components/ModalComponent.vue';
+import PoppedWarningComponent from '@/components/PoppedWarningComponent.vue';
 
 const canonical = 'https://wpgcyclebingo.com/';
 
@@ -23,11 +25,32 @@ useSeoMeta({
   ogType: 'website',
   ogImage: '/images/map.jpg',
 });
+
+
+// can change all this to use Pinia store if/when there are new persistent features
+const seenWarning = ref(true);
+const sessionKey = 'wpgbingo-warning';
+
+function closeWarning() {
+  sessionStorage.setItem(sessionKey, 'true');
+  seenWarning.value = true;
+}
+
+onBeforeMount(() => {
+  if (sessionStorage.getItem(sessionKey)) {
+    seenWarning.value = true;
+  } else {
+    seenWarning.value = false;
+  }
+});
 </script>
 
 <template>
-  <HeaderComponent v-if="$route.path !== '/'" />
+  <HeaderComponent v-if="$route.name !== 'home' && $route.name !== 'not-found'" />
   <RouterView />
+  <ModalComponent v-if="!seenWarning" :closeText="'I agree'" @unpop="closeWarning">
+    <PoppedWarningComponent />
+  </ModalComponent>
 </template>
 
 <style>

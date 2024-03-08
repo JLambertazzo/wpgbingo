@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import type { tChallengeId, tCard, tRoute, tRouteId } from '@/types';
+import type { tChallenge, tCard, tRoute, tRouteId } from '@/types';
 import ChallengeCardComponent from './ChallengeCardComponent.vue';
 import ChallengeButtonComponent from './ChallengeButtonComponent.vue';
 import PoppedCardComponent from './PoppedCardComponent.vue';
@@ -8,13 +8,12 @@ import MapItComponent from './MapItComponent.vue';
 import ModalComponent from './ModalComponent.vue';
 
 const props = defineProps<{
-  challengeId: tChallengeId;
+  challenge: tChallenge;
 }>();
 
-const iCards = await import(`../data/${props.challengeId}/cards.ts`);
-const cards: tCard[] = iCards.default;
-const iRoutes = await import(`../data/${props.challengeId}/routes.ts`);
-const routes: tRoute[] = iRoutes.default;
+const challenge = props.challenge;
+const cards = challenge.cards;
+const routes = challenge.routes;
 const navRoutes = routes.filter((e) => e.button);
 const buttonRoutes = routes.filter((e) => !e.button);
 const hasDiagonals = routes.filter((e) => e.id.startsWith('d')).length > 0;
@@ -81,7 +80,7 @@ function isCardInSelectedRoute(card: tCard) {
       <ChallengeCardComponent
         v-for="card in cards"
         :key="card.id"
-        :challenge-id="challengeId"
+        :challenge-id="challenge.id"
         :card="card"
         :selected="isCardInSelectedRoute(card)"
         @popup="popupCard"
@@ -105,7 +104,7 @@ function isCardInSelectedRoute(card: tCard) {
   </section>
 
   <ModalComponent v-if="poppedCard" @unpop="unpopCard">
-    <PoppedCardComponent :challenge-id="challengeId" :card="poppedCard" />
+    <PoppedCardComponent :challenge-id="challenge.id" :card="poppedCard" />
   </ModalComponent>
 
   <MapItComponent v-if="selectedRoute" :dist="selectedRoute.dist" :url="selectedRoute.url" />
