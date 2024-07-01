@@ -24,9 +24,11 @@ const showHofer = (selector) => (hofer) => {
 
 const addToEasier = showHofer('#wall-of-fame-easier');
 const addToHarder = showHofer('#wall-of-fame-harder');
+const addToHistory = showHofer('#wall-of-fame-history');
 
 easierHallOfFame.forEach(addToEasier);
 harderHallOfFame.forEach(addToHarder);
+historyHallOfFame.forEach(addToHistory);
 
 const you = {
   name: "This could be you!",
@@ -37,3 +39,4 @@ const you = {
 
 addToEasier(you)
 addToHarder(you)
+addToHistory(you)

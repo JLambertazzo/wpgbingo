@@ -1,3 +1,12 @@
+const historyHallOfFame = [
+  {
+    name: "Charles Burchill, Dave Routhier and Steve Lambert",
+    date: "2024-06-30",
+    img: "/wall/img/stevecharlesdave.jpg",
+    map: "https://strava.app.link/zbYZaoTzRKb"
+  }
+]
+
 const harderHallOfFame = [
   {
     name: "Steve Lambert and Charles Burchill",
