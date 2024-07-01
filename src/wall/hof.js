@@ -41,4 +41,10 @@ const easierHallOfFame = [
     img: "/wall/img/colinviebrock.jpg",
     map: "https://www.strava.com/activities/7891785612",
   },
+  {
+    name: "Iris Dyck and Rosanna Hempel",
+    date: "2024-06-30",
+    img: "/wall/img/irisrosanna.jpg",
+    map: "/wall/img/irisrosannamap.jpg"
+  }
 ];
