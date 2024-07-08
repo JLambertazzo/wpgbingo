@@ -71,6 +71,31 @@ const appendRow = (selector) => (row) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   cards.map(toCardRow).forEach(appendRow("#bingo-container"));
+  document
+    .querySelector("#bingo-container")
+    .appendChild(
+      el(
+        "tr",
+        "",
+        {},
+        el(
+          "td",
+          "pr-2",
+          {},
+          el(
+            "h2",
+            "",
+            {},
+            el(
+              "button",
+              "drop-btn",
+              { onclick: `selectDiag("right")` },
+              el("i", "material-icons -rotate-45", {}, t("chevron_right"))
+            )
+          )
+        )
+      )
+    );
   [...document.querySelectorAll(".bingo-card")].forEach((el) =>
     el.addEventListener("click", imgPopup(el.getAttribute("img")))
   );
