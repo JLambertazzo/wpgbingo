@@ -13,10 +13,10 @@ const cards = [
             full_img: 'https://imgur.com/2INCrvi.jpg'
         },
         {
-            name: 'IG Field',
-            description: 'IG Field is on the University of Manitoba campus',
-            img: 'https://imgur.com/2fG4JOL.jpg',
-            full_img: 'https://imgur.com/M4zERw1.jpg'
+            name: 'Princess Auto Stadium',
+            description: 'Princess Auto Stadium is on the University of Manitoba campus',
+            img: '/harder/img/3investorsgroupfield.jpeg',
+            full_img: '/harder/img/3investorsgroupfield.jpeg'
         },
         {
             name: 'Pollock Island',

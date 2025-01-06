@@ -13,8 +13,8 @@ const cards = [
             full_img: '/easier/img/2awasisakmeskanow.jpeg'
         },
         {
-            name: 'Investors Group Field',
-            description: 'The home of the Winnipeg Blue Bombers, on the University of Manitoba campus.',
+            name: 'Princess Auto Stadium',
+            description: 'The home of the Winnipeg Blue Bombers on the University of Manitoba campus.',
             img: '/easier/img/3investorsgroupfield.jpeg',
             full_img: '/easier/img/3investorsgroupfield.jpeg'
         },
@@ -109,8 +109,8 @@ const cards = [
             full_img: '/easier/img/17fortgibraltar.jpeg'
         },
         {
-            name: 'Shaw Park',
-            description: 'Shaw Park is the home of the Winnipeg Goldeyes and is near the start of the North Winnipeg Parkway trail.',
+            name: 'Blue Cross Park',
+            description: 'Blue Cross Park is the home of the Winnipeg Goldeyes and is near the start of the North Winnipeg Parkway trail.',
             img: '/easier/img/18shawpark.jpeg',
             full_img: '/easier/img/18shawpark.jpeg'
         },
