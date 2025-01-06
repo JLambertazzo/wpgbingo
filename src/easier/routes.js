@@ -110,6 +110,6 @@ const routes = [...rows, ...columns, ...diagonals, ...loops];
 
 const hardcodeRoute = {
   ids: new Array(25).fill(0).map((_, i) => i + 1),
-  url: "https://bit.ly/wpg-bingo-hardcore-easier",
+  url: "https://t.ly/ykrjB",
   dist: "131 km",
 };
