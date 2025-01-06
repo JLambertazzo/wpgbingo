@@ -15,8 +15,8 @@ const cards = [
         {
             name: 'Princess Auto Stadium',
             description: 'The home of the Winnipeg Blue Bombers on the University of Manitoba campus.',
-            img: '/easier/img/3investorsgroupfield.jpeg',
-            full_img: '/easier/img/3investorsgroupfield.jpeg'
+            img: '/easier/img/3princessautostadium.jpeg',
+            full_img: '/easier/img/3princessautostadium.jpeg'
         },
         {
             name: 'Fort Whyte Alive',
@@ -111,8 +111,8 @@ const cards = [
         {
             name: 'Blue Cross Park',
             description: 'Blue Cross Park is the home of the Winnipeg Goldeyes and is near the start of the North Winnipeg Parkway trail.',
-            img: '/easier/img/18shawpark.jpeg',
-            full_img: '/easier/img/18shawpark.jpeg'
+            img: '/easier/img/18bluecrosspark.jpeg',
+            full_img: '/easier/img/18bluecrosspark.jpeg'
         },
         {
             name: 'Manitoba Legislature',

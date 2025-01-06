@@ -15,8 +15,8 @@ const cards = [
         {
             name: 'Princess Auto Stadium',
             description: 'Princess Auto Stadium is on the University of Manitoba campus',
-            img: '/harder/img/3investorsgroupfield.jpeg',
-            full_img: '/harder/img/3investorsgroupfield.jpeg'
+            img: '/harder/img/3princessautostadium.jpeg',
+            full_img: '/harder/img/3princessautostadium.jpeg'
         },
         {
             name: 'Pollock Island',
