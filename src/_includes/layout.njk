@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-577DCV5D');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/bike_ico.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="A bingo game that encourages people to discover different areas of Winnipeg on bicycle"
+    />
+    <meta name="author" content="Steve Lambert & Julien Bertazzo Lambert" />
+    <meta
+      name="keywords"
+      content="Bike, Bycicle, Winnipeg, Biking, Adventure, Bingo"
+    />
+    <meta property="og:title" content="WPG Bike Bingo" />
+    <meta
+      property="og:description"
+      content="A bingo game that encourages people to discover different areas of Winnipeg on bicycle"
+    />
+    <meta
+      property="og:image"
+      content="/easier/img/14assiniboinepark.jpeg"
+    />
+    <meta property="og:url" content="https://www.julienbl.me/wpgbingo" />
+    <meta name="twitter:title" content="WPG Bike Bingo" />
+    <meta
+      name="twitter:description"
+      content="A bingo game that encourages people to discover different areas of Winnipeg on bicycle"
+    />
+    <meta
+      name="twitter:image"
+      content="/easier/img/14assiniboinepark.jpeg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/dropdown.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% if extra_head_content %}
+      {{ extra_head_content | safe }}
+    {% endif %}
+</head>
+<body class="w-screen h-screen bg-gray-100 font-sans">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-577DCV5D"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{ content | safe }}
+</body>
+</html>

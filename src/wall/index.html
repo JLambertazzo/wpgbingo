@@ -1,87 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-577DCV5D');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="A bingo game that encourages people to discover different areas of Winnipeg on bicycle"
-    />
-    <meta name="author" content="Steve Lambert & Julien Bertazzo Lambert" />
-    <meta
-      name="keywords"
-      content="Bike, Bycicle, Winnipeg, Biking, Adventure, Bingo"
-    />
-    <meta property="og:title" content="WPG Bike Bingo" />
-    <meta
-      property="og:description"
-      content="A bingo game that encourages people to discover different areas of Winnipeg on bicycle"
-    />
-    <meta
-      property="og:image"
-      content="/easier/img/14assiniboinepark.jpeg"
-    />
-    <meta property="og:url" content="https://www.julienbl.me/wpgbingo" />
-    <meta name="twitter:title" content="WPG Bike Bingo" />
-    <meta
-      name="twitter:description"
-      content="A bingo game that encourages people to discover different areas of Winnipeg on bicycle"
-    />
-    <meta
-      name="twitter:image"
-      content="/easier/img/14assiniboinepark.jpeg"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="shortcut icon" href="/img/bike_ico.ico" type="image/x-icon" />
-    <title>Wall of Fame</title>
-    <link rel="stylesheet" href="/style.css">
-    <script defer src="/js/el.js"></script>
-    <script defer src="/js/date-and-time.min.js"></script>
-    <script defer src="/wall/hof.js"></script>
-    <script defer src="/wall/wall.js"></script>
-  </head>
-<body class="bg-gray-100">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-577DCV5D"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <main class="m-8">
-        <div class="my-4">
-            <a class="text-blue-700 underline mr-1 hover:text-gray-900" href="/">Home</a>
-        </div>
-        <h1 class="font-bold text-7xl text-blue-700">Wall of Fame</h1>
-        <div>
-          <p class="text-2xl text-gray-700 mx-4">
-              The best players of the game.
-          </p>
-          <p class="font-light text-base w-2/3 text-gray-500 mx-4">Want to be on the wall of fame? Complete the hardcore challenge on the site and send your name, date of completion, link to a map tracking your ride (ex. Strava), and a picture of you on the ride to <a href="mailto:chuckycanuck@gmail.com" class="text-blue-400 hover:text-blue-600 underline">Steve Lambert - chuckycanuck@gmail.com</a></p>
-        </div>
-        <div>
-          <p class="text-2xl text-gray-700 mx-4">
-              Secret hardcore challenge.
-          </p>
-          <p class="font-light text-base w-2/3 text-gray-500 mx-4">Want an extra challenge? Try our secret hardcore challenge: complete both the easier and harder versions of our hardcore challenge in the same bike ride.</p>
-          <div class="mx-4">
-            <a href="https://bit.ly/wpg-bingo-double-hardcore-map" class="text-blue-700 underline mr-1 hover:text-gray-900 mx-4">Map</a><br>
-            <a href="/gpx/double-hardcore-Jan. 15.gpx" class="text-blue-700 underline mr-1 hover:text-gray-900 mx-4" download>.gpx file</a>
-          </div>
-        </div>
-        <div class="my-4">
-            <h2 class="text-4xl font-semibold text-blue-700">History Hardcore Challenge</h2>
-            <div id="wall-of-fame-history" class="flex m-4 gap-4 flex-wrap"></div>
-            <h2 class="text-4xl font-semibold text-blue-700">Harder Challenge</h2>
-            <div id="wall-of-fame-harder" class="flex m-4 gap-4 flex-wrap"></div>
-            <h2 class="text-4xl font-semibold text-blue-700">Easier Challenge</h2>
-            <div id="wall-of-fame-easier" class="flex m-4 gap-4 flex-wrap"></div>
-        </div>
-    </main>
-</body>
-</html>
+---
+layout: layout.njk
+title: Wall of Fame
+extra_head_content: '<script defer src="/js/el.js"></script><script defer src="/js/date-and-time.min.js"></script><script defer src="/js/wall/hof.js"></script><script defer src="/js/wall/wall.js"></script>'
+---
+<main class="m-8">
+  <div class="my-4">
+    <a class="text-blue-700 underline mr-1 hover:text-gray-900" href="/">Home</a>
+  </div>
+  <h1 class="font-bold text-7xl text-blue-700">Wall of Fame</h1>
+  <div>
+    <p class="text-2xl text-gray-700 mx-4">
+      The best players of the game.
+    </p>
+    <p class="font-light text-base w-2/3 text-gray-500 mx-4">Want to be on the wall of fame? Complete the hardcore
+      challenge on the site and send your name, date of completion, link to a map tracking your ride (ex. Strava), and a
+      picture of you on the ride to <a href="mailto:chuckycanuck@gmail.com"
+        class="text-blue-400 hover:text-blue-600 underline">Steve Lambert - chuckycanuck@gmail.com</a></p>
+  </div>
+  <div>
+    <p class="text-2xl text-gray-700 mx-4">
+      Secret hardcore challenge.
+    </p>
+    <p class="font-light text-base w-2/3 text-gray-500 mx-4">Want an extra challenge? Try our secret hardcore challenge:
+      complete both the easier and harder versions of our hardcore challenge in the same bike ride.</p>
+    <div class="mx-4">
+      <a href="https://bit.ly/wpg-bingo-double-hardcore-map"
+        class="text-blue-700 underline mr-1 hover:text-gray-900 mx-4">Map</a><br>
+      <a href="/gpx/double-hardcore-Jan. 15.gpx" class="text-blue-700 underline mr-1 hover:text-gray-900 mx-4"
+        download>.gpx file</a>
+    </div>
+  </div>
+  <div class="my-4">
+    <h2 class="text-4xl font-semibold text-blue-700">History Hardcore Challenge</h2>
+    <div id="wall-of-fame-history" class="flex m-4 gap-4 flex-wrap"></div>
+    <h2 class="text-4xl font-semibold text-blue-700">Harder Challenge</h2>
+    <div id="wall-of-fame-harder" class="flex m-4 gap-4 flex-wrap"></div>
+    <h2 class="text-4xl font-semibold text-blue-700">Easier Challenge</h2>
+    <div id="wall-of-fame-easier" class="flex m-4 gap-4 flex-wrap"></div>
+  </div>
+</main>
