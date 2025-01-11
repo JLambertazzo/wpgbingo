@@ -1,4 +1,4 @@
-export default function(eleventyConfig) {
+module.exports = function(eleventyConfig) {
     eleventyConfig.setInputDirectory("src")
     eleventyConfig.addPassthroughCopy("src/style.css");
     eleventyConfig.addPassthroughCopy("src/dropdown.css");
