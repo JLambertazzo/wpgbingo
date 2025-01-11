@@ -9,7 +9,7 @@ title: WPG Bike Bingo | Easier Bingo
     <div class="flex justify-start">
         <button onclick="selectHardcoreBingo()" class="nav-btn">Hardcore Challenge</button>
         {%- for loop in loops -%}
-            <button onclick="selectLoop('{{ loop.name }}'')" class="nav-btn">{{ loop.id }}</button>
+            <button onclick="selectLoop('{{ loop.name }}')" class="nav-btn">{{ loop.id }}</button>
         {%- endfor -%}
         <a href="/" class="nav-btn ml-auto">Home</a>
     </div>
