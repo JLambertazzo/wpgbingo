@@ -13,14 +13,14 @@ const loops = [
   },
   {
     ids: [12, 13, 17, 18, 19, 22, 23, 24],
-    url: "https://t.ly/LhWq",
+    url: "https://tinyurl.com/3h2fuaku",
     dist: "31 km",
     name: "north",
   },
   {
     ids: [11, 12, 13, 16, 18, 21, 22, 23],
-    url: "https://t.ly/G4FH",
-    dist: "37 km",
+    url: "https://tinyurl.com/yfvasuct",
+    dist: "41 km",
     name: "east",
   },
 ];
@@ -43,8 +43,8 @@ const diagonals = [
 const columns = [
   {
     ids: [1, 6, 11, 16, 21],
-    url: "https://t.ly/5bsF",
-    dist: "30 km",
+    url: "https://tinyurl.com/3x6xwnfz",
+    dist: "29 km",
     name: "1",
   },
   {
@@ -61,7 +61,7 @@ const columns = [
   },
   {
     ids: [4, 9, 14, 19, 24],
-    url: "https://t.ly/4scx",
+    url: "https://tinyurl.com/4zkhysu7",
     dist: "26 km",
     name: "4",
   },
@@ -100,8 +100,8 @@ const rows = [
   },
   {
     ids: [21, 22, 23, 24, 25],
-    url: "https://t.ly/3l1w",
-    dist: "42 km",
+    url: "https://tinyurl.com/mr3sybsf",
+    dist: "36 km",
     name: "5",
   },
 ];
